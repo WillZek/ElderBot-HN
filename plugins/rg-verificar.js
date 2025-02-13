@@ -1,3 +1,4 @@
+/*
 import axios from 'axios'
 import { createHash } from 'crypto'
 import PhoneNumber from 'awesome-phonenumber'
@@ -102,3 +103,4 @@ handler.tags = ['rg']
 handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar']
 
 export default handler
+*/
