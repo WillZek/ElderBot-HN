@@ -1,4 +1,4 @@
-/* ig : https://www.instagram.com/fg98._/ */
+/* Memes */
 import hispamemes from 'hispamemes'
 let handler = async (m, { conn, usedPrefix, command }) => {
 const meme = hispamemes.meme()
@@ -9,5 +9,5 @@ handler.help = ['meme']
 handler.tags = ['fun']
 handler.command = ['meme', 'memes']
 handler.estrellas = 1
-handler.register = true
+handler.register = false
 export default handler
