@@ -1,4 +1,4 @@
-import { promises as fs } from 'fs';
+/* import { promises as fs } from 'fs';
 
 const charactersFilePath = './media/database/characters.json';
 const haremFilePath = './media/database/harem.json';
@@ -50,3 +50,4 @@ handler.tags = ['gacha'];
 handler.command = ['charvideo', 'cvideo', 'wvideo', 'waifuvideo'];
 
 export default handler;
+*/
