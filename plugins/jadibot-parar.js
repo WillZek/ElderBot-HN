@@ -9,5 +9,5 @@ handler.command = handler.help = ['stop', 'byebot'];
 handler.tags = ['serbot'];
 handler.owner = true
 handler.private = true
-handler.register = true
+handler.register = false
 export default handler
