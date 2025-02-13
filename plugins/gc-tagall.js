@@ -1,7 +1,11 @@
 const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, command, usedPrefix }) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
-  const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '🍭';
+  let delirius = await axios.get(`https://delirius-apiofc.vercel.app/tools/country?text=${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}`)
+  let paisdata = delirius.data.result
+  let crow = paisdata ? `${paisdata.emoji}` : 'Desconocido'
+
+  const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '💛';
   m.react(customEmoji);
 
   if (!(isAdmin || isOwner)) {
@@ -13,7 +17,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
   const oi = `*» INFO :* ${pesan}`;
   let teks = `*!  MENCION GENERAL  !*\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n╭  ┄ 𝐇𝐍 𝐄𝐋𝐃𝐄𝐑 𝐁𝐎𝐓 🤖 ꒱  ۟  𝅄 ┄\n`;
   for (const mem of participants) {
-    teks += `┊${customEmoji} @${mem.id.split('@')[0]}\n`;
+    teks += `┊${crow} @${mem.id.split('@')[0]}\n`;
   }
   teks += `╰⸼ ┄ ┄ ┄ ─  ꒰  ׅ୭ *${vs}* ୧ ׅ ꒱  ┄  ─ ┄ ⸼`;
 
