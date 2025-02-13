@@ -37,7 +37,7 @@ handler.help = ['botreglas'];
 handler.tags = ['main'];
 handler.command = ['botreglas', 'reglasdelbot', 'reglasbot', 'reglas'];
 handler.estrellas = 5;
-handler.register = true;
+handler.register = false;
 
 export default handler;
 
