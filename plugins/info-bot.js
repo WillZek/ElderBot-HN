@@ -7,9 +7,10 @@ if (chat.isBaneed) return
 if (/^bot$/i.test(m.text)) {
 conn.reply(m.chat, `🌠 ¡Hola! Soy CrowBot, en que puedo ayudarte hoy?\n\n✰ Usa *.menu* para ver mis comandos.`, m, rcanal, )
 }
-/*if (/^que|q$/i.test(m.text)) {
+if (/^que|q$/i.test(m.text)) {
 conn.reply(m.chat, `*so*`, m, rcanal, )
-}*/
+}
+
 if (/^English$/i.test(m.text)) {
 conn.reply(m.chat, `*The first one to speak is gay*`, m, rcanal, )
 }
