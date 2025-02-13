@@ -43,7 +43,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 
 handler.command = /^(spotifydl|spdl|Spotifydl)$/i;
 handler.tags = ['descargas'];
-handler.register = true;
+handler.register = false;
 handler.estrellas = 6;
 
 export default handler;
