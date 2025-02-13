@@ -1,3 +1,4 @@
+/*
 import { promises as fs } from 'fs';
 
 const charactersFilePath = './media/database/characters.json';
@@ -72,3 +73,4 @@ claimHandler.tags = ['gacha'];
 claimHandler.command = ['c', 'claim', 'reclamar'];
 
 export default claimHandler;
+*/
