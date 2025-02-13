@@ -3,7 +3,7 @@ if (!(m.chat in global.db.data.chats)) return conn.reply(m.chat, '🎌 *¡Este c
 let chat = global.db.data.chats[m.chat]
 if (!chat.isBanned) return conn.reply(m.chat, '[🌠] *El bot no está baneado en este chat*', m)
 chat.isBanned = false
-await conn.reply(m.chat, `➩ *ᴇʟ ʙᴏᴛ ʜᴀ sɪᴅᴏ ᴅᴇsᴀᴄᴛɪᴠᴀᴅᴏ ᴇɴ ᴇsᴛᴇ ᴄʜᴀᴛ*`, m)
+await conn.reply(m.chat, `➩ *ᴇʟ ʙᴏᴛ ʜᴀ sɪᴅᴏ ᴅᴇsᴀᴄᴛɪᴠᴀᴅᴏ ᴇɴ ᴇsᴛᴇ ᴄʜᴀᴛ🚩*`, m)
 }
 handler.help = ['unbanchat'];
 handler.tags = ['owner'];
