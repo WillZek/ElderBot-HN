@@ -1,8 +1,6 @@
 import fetch from 'node-fetch';
 import PhoneNumber from 'awesome-phonenumber';
 
-// import axios from 'axios';
-
 const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, command, usedPrefix }) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
@@ -10,7 +8,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
   let response = await fetch(api);
   let json = await response.json();
   let paisdata = `${json.result}`;
- // let crow = paisdata ? `${paisdata.emoji}` : 'Desconocido'
+  let crow = paisdata ? `${paisdata.emoji}` : '🥷'
 
   const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '💛';
   m.react(customEmoji);
