@@ -7,7 +7,7 @@ const handler = async (m, { conn }) => {
 
     // Una Verificación Ya Que No Funcionó La Mrd xD
     if (new Date().getTime() - global.db.data.users[m.sender].lastclaim < tenDaysInMillis) {
-        return conn.reply(m.chat, `*Ya Has Reclamado El Regalo De CrowBot💛, Vuelve En ${msToTime(time - new Date().getTime())}*`, m);
+        return conn.reply(m.chat, `*Ya Has Reclamado El Regalo De ElderBot💛, Vuelve En ${msToTime(time - new Date().getTime())}*`, m);
     }
 
     const user = global.db.data.users[m.sender];
