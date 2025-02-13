@@ -17,7 +17,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
   const oi = `*» INFO :* ${pesan}`;
   let teks = `*!  MENCION GENERAL  !*\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n╭  ┄ 𝐇𝐍 𝐄𝐋𝐃𝐄𝐑 𝐁𝐎𝐓 🤖 ꒱  ۟  𝅄 ┄\n`;
   for (const mem of participants) {
-    teks += `┊${crow} @${mem.id.split('@')[0]}\n`;
+    teks += `┊${paisdata.emoji} @${mem.id.split('@')[0]}\n`;
   }
   teks += `╰⸼ ┄ ┄ ┄ ─  ꒰  ׅ୭ *${vs}* ୧ ׅ ꒱  ┄  ─ ┄ ⸼`;
 
