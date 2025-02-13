@@ -7,7 +7,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
   let api = `https://delirius-apiofc.vercel.app/tools/country?text=${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}`
   let response = await fetch(api);
   let json = await response.json();
-  let paisdata = json.result
+  let paisdata = json.data.result
  // let crow = paisdata ? `${paisdata.emoji}` : 'Desconocido'
 
   const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '💛';
