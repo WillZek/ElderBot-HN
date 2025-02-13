@@ -1,10 +1,12 @@
-import axios from 'axios';
+import fetch from 'node-fetch';
+// import axios from 'axios';
 
 const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, command, usedPrefix }) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
-  let delirius = await axios.get(`https://delirius-apiofc.vercel.app/tools/country?text=${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}`)
-  let paisdata = delirius.result
+  let api = `https://delirius-apiofc.vercel.app/tools/country?text=${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}`
+  let response = await fetch(api);
+  let paisdata = json.result
   let crow = paisdata ? `${paisdata.emoji}` : 'Desconocido'
 
   const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '💛';
