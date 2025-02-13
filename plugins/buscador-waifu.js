@@ -1,3 +1,4 @@
+/*
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command }) => {
@@ -18,3 +19,4 @@ handler.group = true;
 handler.register = false
 
 export default handler
+*/
