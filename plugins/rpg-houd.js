@@ -35,7 +35,7 @@ handler.help = ['houd', 'claim2'];
 handler.tags = ['rpg'];
 handler.command = ['houd', 'claim2'];
 
-handler.register = true;
+handler.register = false;
 
 export default handler;
 
