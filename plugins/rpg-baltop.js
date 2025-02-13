@@ -22,7 +22,7 @@ let handler = async (m, { conn, args, participants }) => {
 handler.help = ['baltop'];
 handler.tags = ['rpg'];
 handler.command = ['baltop', 'eboard'];
-handler.register = true;
+handler.register = false;
 handler.fail = null;
 handler.exp = 0;
 
