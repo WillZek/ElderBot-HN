@@ -288,14 +288,12 @@ let user = global.db.data.users[m.sender]
 if (!['owner-unbanchat.js'].includes(name) && chat && chat.isBanned && !isROwner) return // Except this
 if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && name != 'tool-delete.js' && chat?.isBanned && !isROwner) return 
 
-/* if (m.text && user.banned && !isROwner) {
+if (m.text && user.banned && !isROwner) {
 if (user.antispam > 2) return
-m.reply(`🚫 Está baneado(a), no puede usar los comandos de este bot!\n\n${user.bannedReason ? `\n💌 *Motivo:* 
-${user.bannedReason}` : '💌 *Motivo:* Sin Especificar'}\n\n⚠️ *Si este bot es cuenta oficial y tiene evidencia que respalde que este mensaje es un error, puede exponer su caso en:*\n\n❤️‍🔥 ${asistencia}`)
+m.reply(`*🚫 Está baneado(a), no puede usar los comandos de este bot!*`)
 user.antispam++        
 return
 }
-*/
 
 //Antispam 2                
 if (user.antispam2 && isROwner) return
