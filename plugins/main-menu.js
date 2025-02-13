@@ -6,12 +6,10 @@ import { xpRange } from '../lib/levelling.js'
 let tags = {
   'crow': '👑「 *`MENUS ELDERBOT`* 」👑',
   'main': '「INFO」🍨',
-  'teclado': '「TECLADO ELDERBOT」🍨',
   'buscador': '「BUSQUEDAS」🍨',
   'fun': '「JUEGOS」🍨',
   'serbot': '「SUB BOTS」🍨',
   'rpg': '「RPG」🍨',
-  'gacha': '「ROLLWAIFUS」🍨',
   'rg': '「REGISTRO」🍨',
   'sticker': '「STICKERS」🍨',
   'emox': '「ANIMES」🍨',
