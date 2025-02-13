@@ -26,7 +26,7 @@ let handler = async (m, { conn, args }) => {
       m.chat,
       responseImg.data,
       "thumbnail.png",
-      `*🌐 Lista de usuarios en línea ahora ♡:*\n${listaEnLinea}\n\n\`CrowBot By Niño Piña\``,
+      `*🌐 Lista de usuarios en línea ahora ♡:*\n${listaEnLinea}\n\n\`ElderBot By HN Elder\``,
       m,
       {
         contextInfo: { mentionedJid: participantesOrdenados },
