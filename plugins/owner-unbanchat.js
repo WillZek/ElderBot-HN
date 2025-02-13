@@ -8,7 +8,7 @@ await conn.reply(m.chat, `➩ *ᴇʟ ʙᴏᴛ ʜᴀ sɪᴅᴏ ᴅᴇsᴀᴄᴛɪ
 handler.help = ['unbanchat'];
 handler.tags = ['owner'];
 handler.command = ['unbanchat','desbanearchat','desbanchat']
-handler.prems = true 
+handler.owner = true 
 handler.botAdmin = false
 handler.group = false
 
