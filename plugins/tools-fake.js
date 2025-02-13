@@ -19,7 +19,7 @@ handler.help = ['fake *<texto/@tag/texto>*']
 handler.tags = ['tools']
 handler.command = /^(fake)$/
 handler.estrellas = 4;
-handler.register = true 
+handler.register = false 
 
 export default handler
 
