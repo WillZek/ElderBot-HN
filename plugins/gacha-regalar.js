@@ -1,4 +1,5 @@
 
+/*
 import { promises as fs } from 'fs';
 
 const charactersFilePath = './media/database/characters.json';
@@ -59,3 +60,4 @@ givecharHandler.tags = ['gacha'];
 givecharHandler.command = ['regalar', 'givewaifu', 'givechar'];
 
 export default givecharHandler;
+*/
