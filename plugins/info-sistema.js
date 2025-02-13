@@ -67,7 +67,7 @@ handler.tags = ['info'];
 handler.command = ['system', 'sistema'];
 handler.estrellas = 5;
 
-handler.register = true;
+handler.register = false;
 
 export default handler;
 
