@@ -43,7 +43,8 @@ let claimHandler = async (m, { conn }) => {
 
         try {
             const brawlers = await loadBrawlers();
-            const brawlerId = m.quoted.text.match(/ID: \*(.+?)\*/)[1]; 
+            const brawlerId = m.quoted.text.match(/ID: \*(.+?)\*/
+/* ([1]; 
             const brawler = brawlers.find(c => c.id === brawlerId);
 
             if (!brawler) {
