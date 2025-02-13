@@ -1,3 +1,4 @@
+/*
 import { promises as fs } from 'fs';
 
 const charactersFilePath = './media/database/characters.json';
@@ -42,3 +43,4 @@ charinfoHandler.tags = ['gacha'];
 charinfoHandler.command = ['charinfo', 'winfo', 'waifuinfo'];
 
 export default charinfoHandler;
+*/
