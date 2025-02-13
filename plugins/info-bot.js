@@ -1,4 +1,4 @@
-import fs from 'fs';
+/* import fs from 'fs';
 const handler = (m) => m;
 handler.all = async function(m) {
 
@@ -80,3 +80,4 @@ conn.reply(m.chat, `**R꙰EGLAS DEL GRUP❍ꪜ*
 return !0;
 };
 export default handler;
+*/
