@@ -37,7 +37,7 @@ conn.reply(m.chat, '`🌸 Veamos que numeros tienen!`\n\n'+ `➠ *ElderBot-HN* :
 handler.help = ['apostar *<cantidad>*']
 handler.tags = ['fun']
 handler.command = /^(apostar|casino)$/i
-handler.register = true
+handler.register = false
 handler.estrellas = 4;
 handler.fail = null
 export default handler
