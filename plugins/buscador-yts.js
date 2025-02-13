@@ -37,7 +37,7 @@ handler.help = ['ytsearch']
 handler.tags = ['buscador']
 handler.command = /^playlist|ytbuscar|yts(earch)?$/i
 
-handler.register = true
+handler.register = false
 //handler.yenes = 1
 
 export default handler
