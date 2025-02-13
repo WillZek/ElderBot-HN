@@ -49,6 +49,6 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
 handler.tags = ['buscador'];
 handler.help = ['wallpaper *<palabra clave>*'];
 handler.command = ['wallpaper', 'wpaper'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
