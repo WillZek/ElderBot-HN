@@ -16,7 +16,7 @@ user.exp += rsl
 handler.help = ['prostituirse']
 handler.tags = ['rpg']
 handler.command = ['prostituirse', 'prostituta', 'prostituir', 'sentones']
-handler.register = true
+handler.register = false
 export default handler
 function toNum(number) {
 if (number >= 1000 && number < 1000000) {
