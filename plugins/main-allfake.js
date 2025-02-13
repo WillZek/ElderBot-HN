@@ -60,11 +60,11 @@ global.wait = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁�
 
 //Enlaces
 var grupo = 'https://chat.whatsapp.com/B7POPrlJiZf7UWHJKvzVkx'  
-var github = 'https://github.com/WillZek/CrowBot-ST' 
+var github = 'https://github.com/WillZek/ElderBot-HN' 
 var web = 'https://crow-bot-dashboard.vercel.app/' 
 let instagram = 'https://www.instagram.com/crowbot_wa'
 
-global.redes = [grupo, github, web, instagram].getRandom()
+global.redes = [github, instagram].getRandom()
 
 //Imagen
 let category = "imagen"
