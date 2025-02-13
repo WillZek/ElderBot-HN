@@ -7,6 +7,6 @@ conn.reply(m.chat, `➩ *ᴇʟ ʙᴏᴛ ʜᴀ sɪᴅᴏ ᴅᴇsᴀᴄᴛɪᴠᴀ
 handler.help = ['banchat']
 handler.tags = ['owner']
 handler.command = /^banchat$/i
-handler.prems = true 
+handler.owner = true 
 
 export default handler
