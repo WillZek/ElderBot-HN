@@ -21,7 +21,7 @@ handler.help = ['tiktokrandom']
 handler.tags = ['descargas']
 handler.command = ['ttrandom', 'tiktokrandom']
 handler.limit = true 
-handler.register = true
+handler.register = false
 
 export default handler
 
