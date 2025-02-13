@@ -13,7 +13,7 @@ let handler = async(m, { conn, usedPrefix }) {
   }
   handler.command = handler.help = ['token', 'gettoken', 'serbottoken'];
   handler.tags = ['serbot'];
-  handler.register = true
+  handler.register = false
   handler.private = true
   handler.estrellas = 4;
   export default handler;
