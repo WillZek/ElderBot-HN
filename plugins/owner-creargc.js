@@ -14,5 +14,5 @@ handler.help = ['grupocrear <nombre>']
 handler.tags = ['owner']
 handler.command = ['creargc', 'newgc', 'creargrupo', 'grupocrear']
 handler.rowner = true
-handler.register = true
+handler.register = false
 export default handler
