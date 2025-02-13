@@ -156,8 +156,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 await m.react(emojis) 
 
-await conn.sendMessage(m.chat, { video: { url: imgg.getRandom() }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, newsletterName: channelRD.name, serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: textbot, body: dev, thumbnailUrl: 'https://files.catbox.moe/97fqyy.jpg', sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
-}, }, { quoted: null })
+conn.sendMessage(m.chat, {text: text.trim(), mentions: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: { mentionedJid: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": textbot, body: dev, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen1, "mediaUrl": redes, "sourceUrl": redes}}}, {quoted: m})
 
   } catch (e) {
     conn.reply(m.chat, `❌️ Lo sentimos, el menú tiene un error ${e.message}`, m, rcanal, )
