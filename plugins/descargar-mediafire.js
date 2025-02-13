@@ -15,7 +15,7 @@ handler.tags = ['descargas']
 handler.command ='mediafire' , /^(mediafire|mf)$/i
 handler.premium = false
 handler.estrellas = 5
-handler.register = true
+handler.register = false
 export default handler
 
 /* import axios from 'axios';
