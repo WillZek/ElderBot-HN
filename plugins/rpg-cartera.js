@@ -9,5 +9,5 @@ await m.reply(`${who == m.sender ? `Tienes *${user.estrellas} 🌟 Estrellas* en
 handler.help = ['estrellas']
 handler.tags = ['rpg']
 handler.command = ['wallet', 'cartera', 'estrellas', 'bal', 'coins']
-handler.register = true 
+handler.register = false
 export default handler
