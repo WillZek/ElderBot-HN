@@ -38,7 +38,7 @@ let claimHandler = async (m, { conn }) => {
 
         try {
             const characters = await loadCharacters();
-            const characterId = m.quoted.text.match(/ID: \*(.+?)\*/)[1]; 
+            const characterId = m.quoted.text.match(/ID: \*(.+?)\)[1]; 
             const character = characters.find(c => c.id === characterId);
 
             if (!character) {
