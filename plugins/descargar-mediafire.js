@@ -67,7 +67,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 handler.help = ['mediafire *<url>*'];
 handler.tags = ['descargas'];
 handler.command = ['mediafire', 'mf'];
-handler.register = true;
+handler.register = false;
 handler.estrellas = 5;
 
 export default handler;
