@@ -1,3 +1,4 @@
+/*
 let handler = async(m, { conn, command, text }) => {
   if (!text) return m.reply(`*🌠 Ingresa El Motivo Del Préstamo*`)
     if (text.length < 11) return m.reply(`*🚩 Ingresa Al Menos 11 Caracteres*`)
@@ -18,3 +19,4 @@ handler.command = handler.help =['prestamo','prestar']
 handler.prems = true
 
 export default handler
+*/
