@@ -20,7 +20,7 @@ let link = await catbox(media);
 handler.command = handler.help = ['tourl']
 handler.tags = ['tools']
 handler.diamond = true
-handler.estrellas = 5;
+
 export default handler
 
 
