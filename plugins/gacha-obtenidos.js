@@ -1,3 +1,4 @@
+/*
 import { promises as fs } from 'fs';
 
 const charactersFilePath = './media/database/characters.json';
@@ -65,3 +66,4 @@ handler.tags = ['gacha'];
 handler.command = ['harem', 'obtenidos', 'ob'];
 
 export default handler;
+*/
