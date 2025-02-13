@@ -5,7 +5,7 @@ let handler = async (m, { conn, isROwner, text }) => {
 
     if (conn.user.jid === conn.user.jid) {
         const progreso = [
-      "*🕒 iniciando proceso de reinicio de CrowBot*",
+      "*🕒 iniciando proceso de reinicio de ElderBot*",
             "□□□□□□ 0%",
             "■□□□□□ 20%",
             "■■□□□□ 30%",
