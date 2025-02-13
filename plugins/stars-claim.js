@@ -1,3 +1,4 @@
+/*
 import { promises as fs } from 'fs';
 
 const brawlersFilePath = './src/database/brawlers.json';
@@ -82,3 +83,4 @@ claimHandler.tags = ['gacha'];
 claimHandler.command = ['bclaim', 'breclamar'];
 
 export default claimHandler;
+*/
