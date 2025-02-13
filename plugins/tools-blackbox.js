@@ -135,6 +135,6 @@ handler.tags = ['tools'];
 handler.command = /^(blackbox)$/i;
 handler.estrellas = 3;
 handler.premium = false;
-handler.register = true;
+handler.register = false;
 
 export default handler;
