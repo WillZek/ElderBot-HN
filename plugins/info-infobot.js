@@ -55,7 +55,7 @@ setTimeout(resolve, 1000)
 }
 let timestamp = speed()
 let latensi = speed() - timestamp
-let crow = `╭─⬣「 *Info De CrowBot* 」⬣\n`
+let crow = `╭─⬣「 *Info De ElderBot* 」⬣\n`
 crow += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
 crow += `│ 🍭 *Prefijo* : [  ${usedPrefix}  ]\n`
 crow += `│ 📦 *Total Plugins* : ${totalf}\n`
@@ -70,7 +70,7 @@ crow += `│ 💛 *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}*
 crow += `│ 💛 *Grupos Registrados* : ${toNum(totalchats)} ( *${totalchats}* )\n`
 crow += `│ 🍧 *Registrados* : ${toNum(totalreg)} ( *${totalreg}* ) Usuarios\n`
 crow += `╰─⬣\n\n`
-crow += `╭─⬣「 *Chats De CrowBot* 」⬣\n`
+crow += `╭─⬣「 *Chats De ElderBot* 」⬣\n`
 crow += `│ 🧃 *${groupsIn.length}* Chats en Grupos\n`
 crow += `│ 💛 *${groupsIn.length}* Grupos Unidos\n`
 crow += `│ 💛 *${groupsIn.length - groupsIn.length}* Grupos Salidos\n`
