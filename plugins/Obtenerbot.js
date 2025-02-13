@@ -16,7 +16,7 @@ Q haga  que 10 amigos o conocidos sigan el canal, una vez que lo hagan le dices 
 *si no te responden en ese número unete al siguiente grupo*
 https://chat.whatsapp.com/DrQmZfEMSWiK2COjH3Xqq7
 
-*Link de canal que deben seguir* 👇
+\`*Link de canal que deben seguir*`\👇
 
 https://whatsapp.com/channel/0029VagYdbFEwEk5htUejk0t
 `;
