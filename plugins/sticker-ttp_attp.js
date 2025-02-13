@@ -18,5 +18,5 @@ handler.help = ['attp'];
 handler.tags = ['sticker']
 handler.command = /^(attp|ttp|ttp2|ttp3|ttp4|attp2)$/i
 handler.estrellas = 3;
-handler.register = true
+handler.register = false
 export default handler
