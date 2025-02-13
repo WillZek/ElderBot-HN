@@ -71,5 +71,5 @@ ${xxx}
 handler.tags = ['rg']
 handler.help = ['buyprem']
 handler.command = ['buyprem', 'premium', 'prem']
-handler.register = true
+handler.register = false
 export default handler
