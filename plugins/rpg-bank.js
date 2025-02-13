@@ -19,6 +19,6 @@ await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, {mentions: [who]
 handler.help = ['bank']
 handler.tags = ['rpg']
 handler.command = ['bank', 'banco'] 
-handler.register = true 
+handler.register = false 
 handler.group = true
 export default handler 
