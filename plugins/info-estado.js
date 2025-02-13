@@ -30,7 +30,7 @@ handler.help = ['status']
 handler.tags = ['info']
 handler.command = /^(estado|status|estate|state|stado|stats)$/i
 handler.estrellas = 5;
-handler.register = true
+handler.register = false
 export default handler
 
 function clockString(ms) {
