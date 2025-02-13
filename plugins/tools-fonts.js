@@ -3,6 +3,7 @@
 - https://whatsapp.com/channel/0029Vb1AFK6HbFV9kaB3b13W
 */
 
+/*
 const handler = async (m, {command, text, usedPrefix}) => {
 
     if (!text) return conn.reply(m.chat, '🍭 Por favor, ingresa el texto que quieres transformar.', m, rcanal);
@@ -359,3 +360,4 @@ handler.command = ['letra1', 'font1', 'letra2', 'font2', 'letra3', 'font3', 'fon
 handler.register = false;
 
 export default handler;
+*/
