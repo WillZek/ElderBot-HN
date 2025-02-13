@@ -11,7 +11,7 @@ return conn.reply(m.chat, '🍂 *Utiliza este comando directamente en el número
 }
 
 let chatId = m.isGroup ? [m.chat, m.sender] : [m.sender]
-let sessionPath = './LuffySession/'
+let sessionPath = './ElderSession/'
 
 try {
 
@@ -33,7 +33,7 @@ conn.reply(m.chat, `🍂 *¡Hola! ¿logras verme?*`, m, rcanal, )
 }
 } catch (err) {
 console.error('Error al leer la carpeta o los archivos de sesión:', err)
-await conn.reply(m.chat, '[🌠] *Hola Soy CrowBot Sigue El Canal💛*', m, rcanal, )
+await conn.reply(m.chat, '[🌠] *Hola Soy ElderBot Sigue El Canal💛*', m, rcanal, )
 }
 
 }
