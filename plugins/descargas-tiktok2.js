@@ -37,7 +37,7 @@ handler.tags = ['descargas']
 handler.command = /^ttk|tiktok|ttdl$/i
 handler.estrellas = 5;
 handler.disable = false
-handler.register = true
+handler.register = false
 handler.limit = true
 
 export default handler
