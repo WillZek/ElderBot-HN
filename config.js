@@ -35,7 +35,7 @@ global.prems = ['573215751237']
 
 global.packname = '【✧】𝐇𝐍 - 𝐄𝐋𝐃𝐄𝐑࿐'
 global.botname = '(✦◠‿◠) 𝑯𝑵 𝑬𝑳𝑫𝑬𝑹 - 𝑩𝑶𝑻'
-global.wm = '⏤͟͟͞͞⋆⬪࣪ꥈ🍨★ ׄ ꒱ 𝑪𝒓𝒐𝒘𝑩𝒐𝒕 - 𝑺.𝑪.𝑨 ୭'
+global.wm = '⏤͟͟͞͞⋆⬪࣪ꥈ🍨★ ׄ ꒱ 𝑯𝑵 𝑬𝑳𝑫𝑬𝑹 - 𝑩𝑶𝑻 ୭'
 global.author = '꒷꒦𖥻𝐁𝐲 𝐖𝐢𝐥𝐥𝐙𝐞𝐤𓆪'
 global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ s𝗍ᥲrᥴ᥆rᥱ-𝗍ᥱᥲm'
 global.errorm = '𝐄𝐫𝐫𝐨𝐫: ${error.message}'
