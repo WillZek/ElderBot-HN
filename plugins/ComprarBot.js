@@ -1,9 +1,9 @@
 // Código sencillo 
 let handler = async (m, { conn }) => {
 m.react('🍭');
-const message = "〔🍭 *CROW - BOT* 📩〕\n\n> *🎩 HOLA ✨*\n\n*BOT PARA GRUPO* :\n> wa.me/50557865603\n\n*BOT PERZONALIZADO* :\n> wa.me/50557865603";
+const message = "〔🍭 *ELDER - BOT* 📩〕\n\n> *🎩 HOLA ✨*\n\n*BOT PARA GRUPO* :\n> wa.me/50557865603\n\n*BOT PERZONALIZADO* :\n> wa.me/50557865603";
 if (m, rcanal) {
-const img = 'https://files.catbox.moe/kd7vs5.jpg';
+const img = 'https://files.catbox.moe/i7uo2l.jpg';
 try {
 await conn.sendMessage(m.chat, { image: { url: img }, caption: message, mimetype: 'image/jpeg' }, { quoted: fkontak });
 } catch (error) {
