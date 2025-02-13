@@ -168,7 +168,7 @@ handler.help = ['menu']
 handler.tags = ['main']
 handler.estrellas = 5;
 handler.command = ['menu', 'help', 'menuall', 'allmenú', 'allmenu', 'menucompleto'] 
-handler.register = true
+handler.register = false
 
 export default handler
 
