@@ -25,6 +25,6 @@ handler.tags = ['descargas']
 handler.help = ['instagram', 'ig']
 handler.estrellas = 8;
 handler.group = true;
-handler.register = true
+handler.register = false
 
 export default handler
