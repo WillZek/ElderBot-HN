@@ -1,3 +1,4 @@
+/*
 var handler = async m => 
 
 conn.reply(m.chat, ` 
@@ -26,3 +27,4 @@ handler.eatrellas = 1;
 handler.register = true
 
 export default handler 
+*/
