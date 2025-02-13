@@ -104,12 +104,10 @@ global.channelRD = await getRandomChannel()
 // global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "3876577197-120363302285079181@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${packname}`, orderTitle: 'Bang', thumbnail: icons, sellerJid: '0@s.whatsapp.net'}}}
   
 global.icono = [ 
-'https://files.catbox.moe/n2zm6e.jpg',
-'https://files.catbox.moe/1rb6am.jpg',
-'https://files.catbox.moe/2yfz2e.jpg',
-'https://files.catbox.moe/sk7gv5.jpg',
-'https://files.catbox.moe/m5y6ns.jpg',
-'https://files.catbox.moe/y0sazu.jpg',
+'https://files.catbox.moe/oxy8dx.jpg',
+'https://files.catbox.moe/97fqyy.jpg',
+'https://files.catbox.moe/wwt8i4.jpg',
+'https://files.catbox.moe/igcb80.jpg',
 ].getRandom()
 
 global.urls = [
