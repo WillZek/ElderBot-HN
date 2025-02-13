@@ -41,6 +41,6 @@ handler.help = ['ds', 'fixmsgespera']
 handler.tags = ['info']
 handler.command = /^(fixmsgespera|ds)$/i
 handler.estrellas = 5;
-handler.register = true
+handler.register = false
 
 export default handler
