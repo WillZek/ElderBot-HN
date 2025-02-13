@@ -25,7 +25,7 @@ let handler = async (m, { conn, command, text }) => {
 handler.help = ['penetrar @user'];
 handler.tags = ['emox'];
 handler.command = ['penetrar', 'penetrado'];
-handler.register = true;
+handler.register = false;
 handler.group = true;
 handler.fail = null;
 
