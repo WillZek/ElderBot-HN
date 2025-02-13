@@ -96,5 +96,5 @@ handler.help = ['ahorcado']
 handler.tags = ['fun']
 handler.command = ['ahorcado']
 handler.estrellas = 4;
-handler.register = true
+handler.register = false
 export default handler
