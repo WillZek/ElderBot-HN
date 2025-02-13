@@ -1,4 +1,4 @@
-/* Memes */
+// Memes
 import hispamemes from 'hispamemes'
 let handler = async (m, { conn, usedPrefix, command }) => {
 const meme = hispamemes.meme()
