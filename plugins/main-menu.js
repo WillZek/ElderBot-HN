@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'crow': '👑「 *`MENUS CROWBOT`* 」👑',
+  'crow': '👑「 *`MENUS ELDERBOT`* 」👑',
   'main': '「INFO」🍨',
   'teclado': '「TECLADO CROWBOT」🍨',
   'buscador': '「BUSQUEDAS」🍨',
@@ -33,7 +33,6 @@ const defaultMenu = {
 "*「💛」 ¡Hola! %name soy ${nombrebot}*, *%greeting* ❒"
 
 ╔━━━━━ *⊱𝐈𝐍𝐅𝐎 - 𝐁𝐎𝐓⊰*
-✦  👤 *Cliente:* %name
 ✧  ❤️‍🔥 *Exp:* %exp
 ✦  🌟 *Estrellas:* %estrellas
 ✧  👑 *Nivel:* %level
@@ -41,7 +40,6 @@ const defaultMenu = {
 ╚━━━━━━━━━━━━━━
 %readmore
 ╔━━━━━ *⊱𝐈𝐍𝐅𝐎 - 𝐔𝐒𝐄𝐑⊰*
-✧  🤖 *Bot:* CrowBot-ST
 ✦  🔱 *Modo:* Privado VIP 
 ✧  ✨ *Baileys:* Multi Device
 ✦  🪐 *Tiempo Activo:* %muptime
