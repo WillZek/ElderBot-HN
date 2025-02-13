@@ -33,6 +33,6 @@ await m.reply('🚩 Ocurrió un error.');
 handler.help = ['r34 <texto>'];
 handler.command = ['r34', 'rule34'];
 handler.tags = ['emox'];
-handler.register = true;
+handler.register = false;
 // handler.estrellas = 2;
 export default handler;
