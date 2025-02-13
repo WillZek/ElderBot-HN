@@ -1,3 +1,4 @@
+/*
 import { promises as fs } from 'fs';
 
 const charactersFilePath = './media/database/characters.json';
@@ -38,3 +39,4 @@ wimageHandler.tags = ['gacha'];
 wimageHandler.command = ['charimage', 'cimage', 'wimage', 'waifuimage'];
 
 export default wimageHandler;
+*/
