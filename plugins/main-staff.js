@@ -42,7 +42,7 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 • 𝐀𝐍𝐆𝐄𝐋
 🍭 *Rol:* Mod
 💛 *Numero:* Wa.me/50368471855`
-await conn.sendFile(m.chat, 'https://files.catbox.moe/h094yg.jpg', 'brook.jpg', staff.trim(), fkontak, true, {
+await conn.sendFile(m.chat, 'https://files.catbox.moe/oxy8dx.jpg', 'brook.jpg', staff.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
 'isForwarded': false,
