@@ -34,7 +34,7 @@ let handler = async (message, { conn, text }) => {
 handler.help = ['animesearch'];
 handler.tags = ['buscador'];
 handler.command = ['animeflvsearch', 'animeflv', 'animesearch'];
-handler.register = true;
+handler.register = false;
 handler.premium = true
 handler.estrellas = 7;
 export default handler;
