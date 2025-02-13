@@ -43,7 +43,7 @@ if (!stiker) stiker = e
 
 if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { quoted: m })
 
-else return conn.reply(m.chat, `${emojis} *_La conversión ha fallado, intenta enviar primero imagen/video/gif y luego responde con el comando._*`, m, rcanal)
+else return conn.reply(m.chat, `${emojis} *_La conversión ha fallado, intenta enviar primero imagen/video/gif y luego responde con el comando._*`, m)
 
 
 }}
