@@ -356,6 +356,6 @@ const handler = async (m, {command, text, usedPrefix}) => {
 handler.help = ['font1', 'font2', 'font3', 'font4', 'font5', 'fontrandom', 'font6', 'font7', 'font8', 'font9', 'font10'];
 handler.tags = ['teclado'];
 handler.command = ['letra1', 'font1', 'letra2', 'font2', 'letra3', 'font3', 'font4', 'letra4', 'letra5', 'font5', 'letrarandom', 'fontrandom', 'letra6', 'font6', 'letra7', 'font7', 'letra8', 'font8', 'letra9', 'font9', 'letra10', 'font10'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
