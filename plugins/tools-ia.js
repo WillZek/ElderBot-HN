@@ -68,7 +68,7 @@ handler.help = ['chatgpt <texto>', 'ia <texto>']
 
 handler.tags = ['tools']
 
-handler.register = true
+handler.register = false
 
 handler.estrellas = 4;
 
