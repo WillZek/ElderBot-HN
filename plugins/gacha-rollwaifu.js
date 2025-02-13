@@ -1,3 +1,4 @@
+/*
 import { promises as fs } from 'fs';
 
 const charactersFilePath = './media/database/characters.json';
@@ -60,3 +61,4 @@ rollHandler.tags = ['gacha'];
 rollHandler.command = ['roll', 'rw', 'rollwaifu'];
 
 export default rollHandler;
+*/
