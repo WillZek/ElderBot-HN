@@ -32,7 +32,7 @@ let handler = async (m, conn, chatUpdate) => {
     const response = await luminsesi(query, username, prompt);
 
     await conn.sendMessage(m.chat, {
-      text: '*Crow:* ' + response,
+      text: '*Elder:* ' + response,
       contextInfo: {
         forwardingScore: 9999999,
         isForwarded: false,
