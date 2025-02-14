@@ -11,7 +11,7 @@ number = text.split`@`[1]
 } else if(!isNaN(text)) {
 number = text
 }
-nametag = conn.getName();
+nametag = conn.getName(m.sender);
 user = conn.user.jid.split`@`[0] + '@s.whatsapp.net'
 bot = conn.user.jid.split`@`[0] 
 bant = '🎩 *Ingresa el @tag de algún usuario.*'
