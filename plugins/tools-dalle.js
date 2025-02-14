@@ -7,7 +7,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 
     try {
         const response = await fetch(`https://api-xovvip.vercel.app/text2img?text=${encodeURIComponent(text)}`);
-        if (!response.ok) throw new Error('Network response was not ok');
+        if (!response.ok) throw new Error('Error En La Respuesta De La Api');
 
         const buffer = await response.buffer();
         m.react('☑️')
@@ -19,5 +19,5 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 handler.tags = ['tools']
 handler.help = ['dalle']
 handler.command = ['dalle'];
-handler.estrellas = 6;
+
 export default handler;
