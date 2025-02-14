@@ -511,7 +511,7 @@ botAdmin: '「🥷」 *Para usar esta función debo ser admin.*',
 unreg: `「🥷」 *No te encuentras registrado, registrese para usar esta función*\n\n*/reg nombre.edad*\n\n*Ejemplo* : */reg Elder.19*`,
 restrict: '「🥷」 *Esta característica esta desactivada.*'
 }[type];
-if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))}
+if (msg) return conn.reply(m.chat, msg, m).then(_ => m.react('✖️'))}
 
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
