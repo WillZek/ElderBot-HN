@@ -59,13 +59,12 @@ ${diskSpace ? `
 → Porcentaje de Uso: ${diskSpace.usePercent}` : 'Error.'}
 `;
 
-    await conn.reply(m.chat, message.trim(), m, rcanal, );
+    await conn.reply(m.chat, message.trim(), m, );
 };
 
 handler.help = ['sistema'];
 handler.tags = ['info'];
 handler.command = ['system', 'sistema'];
-handler.estrellas = 5;
 
 handler.register = false;
 
