@@ -14,6 +14,5 @@
 handler.help = ['pajeame'];
 handler.tags = ['fun'];
 handler.command = /^pajeame|paja$/i;
-handler.estrellas = 2;
 
 export default handler;
