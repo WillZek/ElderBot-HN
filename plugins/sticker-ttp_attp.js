@@ -12,11 +12,10 @@ conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forw
 
 if (command == 'ttp') {
 let stiker = await sticker(null,`https://api.erdwpe.com/api/maker/ttp?text=${teks}`,global.packname, global.author)
-conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: channel, thumbnail: imagen1}}}, { quoted: m })}
+conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, thumbnail: imagen1}}}, { quoted: m })}
 }
 handler.help = ['attp'];
 handler.tags = ['sticker']
 handler.command = /^(attp|ttp|ttp2|ttp3|ttp4|attp2)$/i
-handler.estrellas = 3;
 handler.register = false
 export default handler
