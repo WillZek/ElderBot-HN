@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, text }) => {
 
     let users = global.db.data.users;
     
-    if (!users[who]) {
+    if (!user[who]) {
         await conn.reply(m.chat, '🎩 *El usuario no existe en la base de datos.*', m);
         return;
     }
