@@ -3,7 +3,7 @@ if (!text) return m.reply('🍭 *Ingresa el @tag de algún usuario.*')
 let who
 if (m.isGroup) who = m.mentionedJid[0]
 else who = m.chat
-if (!m.mentionedJid[0] && !m.quoted) { 
+if (!who && !m.quoted) { 
 return m.reply('🎩 *Ingresa el @tag de algún usuario.*')
 let users = global.db.data.users
 users[who].banned = true
