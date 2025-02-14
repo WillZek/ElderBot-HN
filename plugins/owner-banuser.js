@@ -4,7 +4,7 @@ let cwho = m.mentionedJid[0]
 let who
 if (m.isGroup) who = m.mentionedJid[0]
 else who = m.chat
-if (!text && !m.quoted)
+if (!cwho && !m.quoted)
 return m.reply('🎩 *Ingresa el @tag de algún usuario.*');
 
 let users = global.db.data.users
