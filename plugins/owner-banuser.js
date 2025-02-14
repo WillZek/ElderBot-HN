@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text}) => {
+let handler = async (m, { conn, args, text}) => {
 
 let cwho = m.mentionedJid[0]
 let who
@@ -15,8 +15,9 @@ user = args[0].replace('@', '') + '@s.whatsapp.net';
         return;
     }
 
-// if (!who && !m.quoted)
+/* if (!who && !m.quoted)
 return m.reply('🎩 *Ingresa el @tag de algún usuario.*');
+*/
 
 let users = global.db.data.users
 users[who].banned = true
