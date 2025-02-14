@@ -133,7 +133,6 @@ let handler = async (m, { text, usedPrefix, command, conn }) => {
 handler.help = ['blackbox <pregunta>'];
 handler.tags = ['tools'];
 handler.command = /^(blackbox)$/i;
-handler.estrellas = 3;
 handler.premium = false;
 handler.register = false;
 
