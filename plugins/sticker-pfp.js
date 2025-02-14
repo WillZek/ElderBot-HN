@@ -12,6 +12,5 @@ let handler = async (m, { conn }) => {
 handler.help = ['pfp @user'];
 handler.tags = ['sticker'];
 handler.command = ['pfp'];
-handler.estrellas = 6;
 
 export default handler;
