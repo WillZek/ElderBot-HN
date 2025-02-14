@@ -4,7 +4,18 @@ let cwho = m.mentionedJid[0]
 let who
 if (m.isGroup) who = m.mentionedJid[0]
 else who = m.chat
-if (!who && !m.quoted)
+
+let user;
+if (m.quoted) {
+user = m.quoted.sender;
+} else if (args.length >= 1) {
+user = args[0].replace('@', '') + '@s.whatsapp.net';
+} else {
+        await conn.reply(m.chat, '🎩 *Ingresa el @tag de algún usuario.*', m);
+        return;
+    }
+
+// if (!who && !m.quoted)
 return m.reply('🎩 *Ingresa el @tag de algún usuario.*');
 
 let users = global.db.data.users
