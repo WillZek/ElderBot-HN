@@ -12,7 +12,7 @@ console.log()
 global.conns = []
 }
 let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems, isROwner }) => {
-if (!db.data.settings[conn.user.jid].jadibotmd && m.isGroup) {
+if (!db.data.settings[conn.user.jid].jadibotmd && m.isROwner) {
     return m.reply(`🥷 Este Comando está deshabilitado por mi creador.`);
 }
 // if (!global.db.data.settings[conn.user.jid].jadibotmd && !isROwner) {
