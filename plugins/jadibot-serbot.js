@@ -18,7 +18,7 @@ const bot = global.db.data.settings[conn.user.jid] || {};
 if (!bot.jadibotmd) return m.reply('🥷 Este Comando Esta Desabilitado Por El Propietario Del Bot');
 
 // if (!global.db.data.settings[conn.user.jid].jadibotmd && !isROwner) {
-conn.reply(m.chat, '🌸 Este Comando está deshabilitado por mi creador.', m, rcanal)
+// conn.reply(m.chat, '🌸 Este Comando está deshabilitado por mi creador.', m, rcanal)
 return
 }
 
