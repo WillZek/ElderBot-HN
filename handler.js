@@ -108,7 +108,7 @@ chat.antiLink2 = false
                 if (!('antiBot2' in chat))
 chat.antiBot2 = false
                 if (!('modoadmin' in chat))                     
-chat.modoadmin = false   
+chat.modoadmin = false      
                 if (!('antiver' in chat))
                     chat.antiver = false
                 if (!('delete' in chat))
