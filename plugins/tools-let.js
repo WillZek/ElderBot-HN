@@ -14,6 +14,5 @@ const handler = async (m, { conn, command, participants, text }) => {
 handler.tag = ['tools'];
 handler.help = ['let'];
 handler.command = ['let'];
-handler.estrellas = 8;
 handler.owner = true;
 export default handler;
