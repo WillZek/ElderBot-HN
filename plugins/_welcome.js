@@ -23,7 +23,7 @@ let desc = → ${groupMetadata.desc?.toString() || '*ElderBot-HN*'}
   const welcomeMessage = global.db.data.chats[m.chat]?.welcomeMessage || 'Bienvenido/a :';
 
     if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
-    let bienvenida = `┌─★ 𝐇𝐍 𝐄𝐥𝐝𝐞𝐫𝐁𝐨𝐭\n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🥷 ${welcomeMessage}\n   │🥷  ${groupMetadata.subject}\n\n*Lee La Descripción :* ${desc}\n   └───────────────┈ ⳹\n> ${dev}`
+    let bienvenida = `┌─★ 𝐇𝐍 𝐄𝐥𝐝𝐞𝐫𝐁𝐨𝐭\n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🥷 ${welcomeMessage}\n   │🥷  ${groupMetadata.subject}\n\n\n*Lee La Descripción :* ${desc}\n   └───────────────┈ ⳹\n> ${dev}`
       await conn.sendMessage(m.chat, { image: img, caption: bienvenida, mentions: [who] }, { quoted: estilo })
     } else if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE || m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
 
