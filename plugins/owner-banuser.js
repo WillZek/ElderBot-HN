@@ -41,7 +41,7 @@ usr = m.sender.split('@')[0]
 await conn.reply(m.chat, '✨ *El usuario fue baneado con éxito.*', m, { mentions: [user] })   
 await conn.reply('5351524614@s.whatsapp.net', `🚩 El usuario *${nametag}* ha sido Baneado por *${nn}*.`, m, rcanal, );
 }} catch (e) {
-await conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, rcanal, )
+await conn.reply(m.chat, `🚩 *Ocurrió un fallo* ${e.message}`, m, )
 console.log(e) 
 }
 
