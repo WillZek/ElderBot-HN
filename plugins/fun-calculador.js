@@ -1,5 +1,5 @@
 const handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) return conn.reply(m.chat, `💜 Mensiona a un Usuario.`, m, rcanal, );
+  if (!text) return conn.reply(m.chat, `💜 Mensiona a un Usuario.`, m, );
   const percentages = (500).getRandom();
   let emoji = '';
   let description = '';
@@ -114,5 +114,5 @@ handler.tags = ['fun'];
 handler.register = false;
 handler.group = true;
 handler.command = ['gay', 'lesbiana', 'pajero', 'pajera', 'puto', 'puta', 'manco', 'manca', 'rata', 'prostituta', 'prostituto'];
-handler.estrellas = 5;
+
 export default handler;
