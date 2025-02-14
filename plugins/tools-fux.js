@@ -5,7 +5,7 @@
 import axios from "axios";
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) return conn.reply(m.chat,`✨ Ejemplo: ${usedPrefix} ${command} paisaje hermoso`, m, fake)
+  if (!text) return conn.reply(m.chat,`✨ Ejemplo: ${usedPrefix} ${command} paisaje hermoso`, m)
   await m.react('🕓')
 
   try {
@@ -36,7 +36,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ["fux *<texto>*"];
 handler.tags = ["tools"];
 handler.command = ["fux"];
-handler.estrellas = 3;
 
 export default handler;
 
