@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text}) => {
-if (!text) return m.reply('🍭 *Ingresa el @tag de algún usuario.*')
+if (!text && !m.quoted) return conn.reply(m.chat, `🍭 *Ingresa el @tag de algún usuario.`, m)
 
 let cwho = m.mentionedJid[0]
 let who
