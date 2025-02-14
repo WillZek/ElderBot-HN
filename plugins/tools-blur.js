@@ -7,5 +7,4 @@ let handler = async (m, { conn, usedprefix }) => {
     handler.help = ['blur','difuminar']
     handler.tags = ['tools']
     handler.command = /^(blur|difuminar)$/i
-    handler.estrellas = 4;
     export default handler
