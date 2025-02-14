@@ -21,7 +21,7 @@ const handler = async (m, {conn, isROwner, text}) => {
   }
   m.reply(`${emoji} *𝖬𝖾𝗇𝗌𝖺𝗃𝖾 𝖤𝗇𝗏𝗂𝖺𝖽𝗈 𝖠:* ${anu.length} *Grupo/S*`);
 };
-handler.help = ['broadcastgroup', 'bcgc'];
+handler.help = ['bcgc'];
 handler.tags = ['owner'];
 handler.command = ['bcgc'];
 handler.owner = true;
