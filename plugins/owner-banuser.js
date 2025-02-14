@@ -1,6 +1,6 @@
 var handler = async (m, { conn, text, usedPrefix, command}) => {
 
-let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img
+let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img, nametag
 
 try {
 function no(number){
@@ -11,6 +11,7 @@ number = text.split`@`[1]
 } else if(!isNaN(text)) {
 number = text
 }
+nametag = conn.getName();
 user = conn.user.jid.split`@`[0] + '@s.whatsapp.net'
 bot = conn.user.jid.split`@`[0] 
 bant = '🎩 *Ingresa el @tag de algún usuario.*'
