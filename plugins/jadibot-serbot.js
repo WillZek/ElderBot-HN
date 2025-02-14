@@ -17,10 +17,11 @@ const bot = global.db.data.settings[conn.user.jid] || {};
 
 if (!bot.jadibotmd) return m.reply('🥷 Este Comando Esta Desabilitado Por El Propietario Del Bot');
 
-// if (!global.db.data.settings[conn.user.jid].jadibotmd && !isROwner) {
-// conn.reply(m.chat, '🌸 Este Comando está deshabilitado por mi creador.', m, rcanal)
+/* if (!global.db.data.settings[conn.user.jid].jadibotmd && !isROwner) {
+conn.reply(m.chat, '🌸 Este Comando está deshabilitado por mi creador.', m, rcanal)
 return
 }
+*/
 
 let parentw = args[0] && args[0] == "plz" ? conn : await global.conn
 if (!(args[0] && args[0] == 'plz' || (await global.conn).user.jid == conn.user.jid)) {
