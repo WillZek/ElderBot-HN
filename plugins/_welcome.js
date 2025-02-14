@@ -18,7 +18,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
       img = await (await fetch(defaultImage)).buffer();
     }
 
-let desc = groupMetadata.desc || "*ElderBot-HN*\n *sɪɴ ʀᴇɢʟᴀ 😉*";
+let desc = groupMetadata.desc || "*ElderBot-HN*";
 
   const welcomeMessage = global.db.data.chats[m.chat]?.welcomeMessage || 'Bienvenido/a :';
 
