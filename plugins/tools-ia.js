@@ -20,7 +20,7 @@ if (!img) {
 
 console.error('💛 Error: No image buffer available')
 
-return conn.reply(m.chat, '💛 Error: No se pudo descargar la imagen.', m, fake)}
+return conn.reply(m.chat, '💛 Error: No se pudo descargar la imagen.', m)}
 
 const content = '💛 ¿Qué se observa en la imagen?'
 
@@ -44,7 +44,7 @@ await conn.reply(m.chat, '💛 Error al analizar la imagen.', m)}
 
 } else {
 
-if (!text) { return conn.reply(m.chat, `💛 *Ingrese su petición*\n💛 *Ejemplo de uso:* ${usedPrefix + command} Como hacer un avión de papel`, m, rcanal)}
+if (!text) { return conn.reply(m.chat, `💛 *Ingrese su petición*\n💛 *Ejemplo de uso:* ${usedPrefix + command} Como hacer un avión de papel`, m)}
 
 await m.react('💬')
 
@@ -69,8 +69,6 @@ handler.help = ['chatgpt <texto>', 'ia <texto>']
 handler.tags = ['tools']
 
 handler.register = false
-
-handler.estrellas = 4;
 
 handler.command = ['ia', 'chatgpt', 'ai', 'chat', 'gpt']
 
