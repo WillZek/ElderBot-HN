@@ -18,13 +18,13 @@ let handler = async (m, { conn, args, text }) => {
 
     let users = global.db.data.users;
     
-    if (!user[who]) {
+    if (!users[who]) {
         await conn.reply(m.chat, '🎩 *El usuario no existe en la base de datos.*', m);
         return;
     }
 
     users[who].banned = true;
-    conn.reply(m.chat, `✨ *El usuario @${who.split('@')[0]}, fue baneado con éxito.*`, fkontak, { mentions: [who] });
+    conn.reply(m.chat, `✨ *El usuario @${who.split('@')[0] || m.quoted}, fue baneado con éxito.*`, fkontak, { mentions: [who] });
 }
 
 handler.help = ['banuser <@tag> <razón>']
