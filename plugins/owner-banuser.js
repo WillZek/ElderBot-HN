@@ -35,8 +35,7 @@ aa = ownerNumber + '@s.whatsapp.net'
 await conn.reply(m.chat, `🚩 *No puedo banear a ningun mod de este bot*`, m, { mentions: [aa] })
 return
 }}
-users = global.db.data.users
-if (users[user].banned === true) conn.reply(m.chat, `🚩 *No es necesario volver a banear a @${number}*`, m, { mentions: [user] }) 
+users = global.db.data.users 
 users[user].banned = true
 usr = m.sender.split('@')[0]     
 await conn.reply(m.chat, '✨ *El usuario fue baneado con éxito.*', m, { mentions: [user] })   
