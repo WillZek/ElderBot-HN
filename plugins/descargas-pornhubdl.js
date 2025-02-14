@@ -28,6 +28,5 @@ console.error(error)
 handler.command = ['pornhubdl', 'phdl'];
 handler.tag = ['descargas'];
 handler.help = ['pornohubdl'];
-handler.estrellas = 9;
 
 export default handler;
