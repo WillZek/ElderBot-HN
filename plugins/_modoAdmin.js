@@ -5,7 +5,7 @@ handler.before = async function (m, {conn, isAdmin, isBotAdmin, isOwner, isROwne
 
   const hl = global.prefix
   const adminMode = global.db.data.chats[m.chat].modoadmin
-  const hm = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
+  const hm = `${plugin.botAdmin || plugin.admin || plugin.group || plugin || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
 
   if (m.isGroup) {
     if (adminMode && !isOwner && !isROwner && !isAdmin && hm) return
