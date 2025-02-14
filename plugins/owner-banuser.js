@@ -4,7 +4,7 @@ let cwho = m.mentionedJid[0]
 let who
 if (m.isGroup) who = m.mentionedJid[0]
 else who = m.chat
-if (!cwho && !m.quoted)
+if (!who && !m.quoted)
 return m.reply('🎩 *Ingresa el @tag de algún usuario.*');
 
 let users = global.db.data.users
@@ -14,5 +14,6 @@ conn.reply(m.chat, `✨ *El usuario @${who.split('@')[0]}, fue baneado con éxit
 handler.help = ['banuser <@tag> <razón>']
 handler.command = ['banuser']
 handler.tags = ['owner']
-handler.prems = true
+handler.owner = true
+
 export default handler
