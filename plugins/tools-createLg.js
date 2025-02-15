@@ -19,5 +19,5 @@ throw `*🚨 Lo Sentimos, ha ocurrido un error 😔*`;
 handler.tags = ['tools'];
 handler.help = ['genearimg'];
 handler.command = ['genearimg','imgg'];
-handler.estrellas = 7;
+
 export default handler;
