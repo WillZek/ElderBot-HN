@@ -39,7 +39,6 @@ handler.help = ['xnxxsearch'].map((v) => v + ' <query>');
 handler.tags = ['buscador'];
 handler.command = ['xnxxsearch', 'xnxxs'];
 handler.register = false;
-handler.estrellas = 15;
 handler.group = false;
 export default handler;
 
