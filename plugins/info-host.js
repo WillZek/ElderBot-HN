@@ -36,6 +36,5 @@ sourceUrl: 'https://chat.whatsapp.com/Jz1OYQPEvMcKbwxo4XoVOt'}}},
 handler.tags =['info'] 
 handler.help = ['host', 'hosting'] 
 handler.command = ['host', 'skay', 'skayultraplus', 'hosting']
-handler.estrellas = 3;
 
 export default handler
