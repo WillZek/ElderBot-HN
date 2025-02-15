@@ -79,6 +79,5 @@ handler.register = false;
 handler.group = false;
 handler.tags = ['rg'];
 handler.command = ['profile', 'perfil'];
-handler.estrellas = 2;
 
 export default handler;
