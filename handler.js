@@ -498,9 +498,6 @@ this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 console.error(e)
 }}
 
-for (let i = 0; i < global.owner.length; i++) {
-const ownerNumber = global.owner[i][0];
-
 global.dfail = (type, m, conn) => {
 const msg = {
 rowner: '「🥷」 *Esta función solo puede ser usada por mi creador.*', 
