@@ -23,7 +23,6 @@ conn.reply(m.chat, '⚙️ Ocurrió un error.', m, fake)}}
 handler.command = ['instagram', 'ig']
 handler.tags = ['descargas']
 handler.help = ['instagram', 'ig']
-handler.estrellas = 8;
 handler.group = true;
 handler.register = false
 
