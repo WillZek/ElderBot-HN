@@ -28,7 +28,7 @@ const handler = async (m, { conn }) => {
 handler.command = handler.help = ['todoc']
 handler.tags = ['tools']
 handler.diamond = true;
-handler.estrellas = 5;
+
 export default handler;
 
 function formatBytes(bytes) {
