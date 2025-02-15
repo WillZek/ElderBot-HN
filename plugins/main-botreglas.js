@@ -36,7 +36,6 @@ ${global.md || ''}`.trim(); // Asegúrate de que global.md esté definido
 handler.help = ['botreglas'];
 handler.tags = ['main'];
 handler.command = ['botreglas', 'reglasdelbot', 'reglasbot', 'reglas'];
-handler.estrellas = 5;
 handler.register = false;
 
 export default handler;
