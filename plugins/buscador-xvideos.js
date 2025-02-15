@@ -35,7 +35,6 @@ handler.help = ['xvideosearch'];
 handler.tag = ['buscador'];
 handler.command = ['xvideossearch', 'xvsearch', 'xvse'];
 handler.register = false;
-handler.estrellas = 14;
 handler.group = false;
 
 export default handler;
