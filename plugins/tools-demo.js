@@ -26,7 +26,6 @@ sourceUrl: 'https://whatsapp.com/channel/0029VapSIvR5EjxsD1B7hU3T'}}},
 }
 
 handler.command = handler.help = ['demo'];
-handler.estrellas = 3;
 handler.tags = ['tools'];
 
 export default handler;
