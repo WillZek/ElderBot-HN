@@ -36,5 +36,5 @@ handler.tags = ['buscador'];
 handler.command = ['animeflvsearch', 'animeflv', 'animesearch'];
 handler.register = false;
 handler.premium = true
-handler.estrellas = 7;
+
 export default handler;
