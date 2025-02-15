@@ -3,8 +3,8 @@ import fs from "fs"
 let handler = async(m, { conn, usedPrefix }) {
  try {
     const user = m.sender.split("@")[0]
-    if (fs.existsSync("./CrowJadiBot/" + user + "/creds.json")) {
-        let token = Buffer.from(fs.readFileSync("./CrowJadiBot/" + user + "/creds.json"), "utf-8").toString("base64")
+    if (fs.existsSync("./ElderJadiBot/" + user + "/creds.json")) {
+        let token = Buffer.from(fs.readFileSync("./ElderJadiBot/" + user + "/creds.json"), "utf-8").toString("base64")
         await conn.reply(m.chat, `El token te permite iniciar sesion en otros bots, recomendamos no compartirlo con nadie.\n\n*Tu token es:*`, m, rcanal)
         await conn.reply(m.chat, token, m, rcanal)
     } else {
@@ -15,5 +15,4 @@ let handler = async(m, { conn, usedPrefix }) {
   handler.tags = ['serbot'];
   handler.register = false
   handler.private = true
-  handler.estrellas = 4;
   export default handler;
