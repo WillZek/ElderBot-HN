@@ -503,8 +503,8 @@ const ownerNumber = global.owner[i][0];
 
 global.dfail = (type, m, conn) => {
 const msg = {
-rowner: '「🥷」 *Esta función solo puede ser usada por mi creador ${ownerNumber}*', 
-owner: '「🥷」 *Esta función solo puede ser usada por mi desarrollador. ${ownerNumber}*', 
+rowner: '「🥷」 *Esta función solo puede ser usada por mi creador.*', 
+owner: '「🥷」 *Esta función solo puede ser usada por mi desarrollador.*', 
 mods: '「🥷」 *Esta función solo puede ser usada los moderadores del bot*', 
 premium: '「🥷」 *Esta función solo es para usuarios Premium.*', 
 group: '「🥷」 *Esta funcion solo puede ser ejecutada en grupos.*', 
