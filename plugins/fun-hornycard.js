@@ -7,6 +7,5 @@ const handler = async (m, {conn}) => {
 handler.help = ['hornycard'];
 handler.tags = ['fun'];
 handler.command = /^(hornycard)$/i;
-handler.estrellas = 2;
 
 export default handler;
