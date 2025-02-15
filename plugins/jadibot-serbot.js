@@ -152,7 +152,6 @@ serbot()
 handler.help = ["serbotqr"]
 handler.tags = ["serbot"]
 handler.command = ["jadibot", "qr", "serbotqr"]
-handler.estrellas = 13;
 // handler.register = true
 export default handler
 function sleep(ms) {
