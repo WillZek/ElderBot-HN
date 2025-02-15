@@ -14,7 +14,6 @@ handler.help = ['mediafire']
 handler.tags = ['descargas']
 handler.command ='mediafire' , /^(mediafire|mf)$/i
 handler.premium = false
-handler.estrellas = 5
 handler.register = false
 export default handler
 
