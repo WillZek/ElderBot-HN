@@ -59,7 +59,7 @@ handler.help = ['doxear <nombre> | <@tag>'];
 handler.tags = ['fun'];
 handler.command = /^Doxxeo|doxxeo|doxxear|Doxxear|doxeo|doxear|doxxeame|doxeame/i;
 handler.rowner = false
-handler.estrellas = 2;
+
 export default handler;
 
 function pickRandom(list) {
