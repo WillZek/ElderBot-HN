@@ -22,6 +22,5 @@ conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
 handler.help = ['channelstalk']
 handler.tags = ['tools']
 handler.command = /^(channelstalk|stalkc)$/i
-handler.estrellas = 5;
 handler.register = false
 export default handler;
