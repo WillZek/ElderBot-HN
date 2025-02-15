@@ -25,5 +25,5 @@ await stars.sendMessage(m.chat, { text: responseMessage, mentions: stars.parseMe
 handler.command = ['listjadibot', 'bots']
 handler.help = ['bots']
 handler.tags = ['serbot']
-handler.estrellas = 8;
+
 export default handler
