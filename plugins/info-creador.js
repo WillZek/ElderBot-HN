@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     // VCARD
     let list = [{
         displayName: "Elder-Ofc 🎩",
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: ᴇʟᴅᴇʀ-ᴏғɪᴄɪᴀʟ\nitem1.TEL;waid=50489115621:50489115621\nitem1.X-ABLabel:Número\nitem2.EMAIL;type=INTERNET: posadaselder2806@gmail.com\nitem2.X-ABLabel:Email\nitem3.X-ABLabel:Internet\nitem4.ADR:;; Honduras;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: ᴇʟᴅᴇʀ-ᴏғɪᴄɪᴀʟ\nitem1.TEL;waid=50487421142:50487421142\nitem1.X-ABLabel:Número\nitem2.EMAIL;type=INTERNET: posadaselder2806@gmail.com\nitem2.X-ABLabel:Email\nitem3.X-ABLabel:Internet\nitem4.ADR:;; Honduras;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
     }];
 
     await conn.sendMessage(m.chat, {
@@ -25,7 +25,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 title: 'һ᥆ᥣᥲ s᥆ᥡ ᥱᥣძᥱr-᥆𝖿ᥴ ᥱᥣ mᥱȷ᥆r',
                 body: dev,
                 thumbnailUrl: 'https://files.catbox.moe/i7uo2l.jpg',
-                sourceUrl: 'https://wa.me/50489115621?text=Vengo+Del+Comando+.owner',
+                sourceUrl: 'https://wa.me/50487421142?text=Vengo+Del+Comando+.owner',
                 mediaType: 1,
                 renderLargerThumbnail: true
             }
