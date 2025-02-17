@@ -1,3 +1,4 @@
+/*
 import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix, command }) => {
@@ -28,3 +29,4 @@ handler.tags = ['main']
 handler.command = ['grupos', 'crowgrupos', 'gruposcrow']
 
 export default handler
+*/
