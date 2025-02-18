@@ -1,4 +1,4 @@
-import { smsg } from './lib/simple.js'
+/* import { smsg } from './lib/simple.js'
 import { format } from 'util' 
 import { fileURLToPath } from 'url'
 import path, { join } from 'path'
@@ -519,3 +519,4 @@ watchFile(file, async () => {
     console.log(chalk.magenta("Se actualizo 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 })
+*/
