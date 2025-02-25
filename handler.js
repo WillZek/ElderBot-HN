@@ -500,8 +500,8 @@ console.error(e)
 
 global.dfail = (type, m, conn) => {
 const msg = {
-rowner: '「🥷」 *Esta función solo puede ser usada por mi creador.*\n> Elder (https://wa.me/50487421142)', 
-owner: '「🥷」 *Esta función solo puede ser usada por mi desarrollador.*\n> Elder (https://wa.me/50487421142)', 
+rowner: '*「✧」 Esta función solo puede ser usada por mi creador.*\n> HN ELDER (https://wa.me/50493374445)', 
+owner: '*「✧」 Esta función solo puede ser usada por mi desarrollador.*\n> HN ELDER (https://wa.me/50493374445)', 
 mods: '「🥷」 *Esta función solo puede ser usada los moderadores del bot*', 
 premium: '「🥷」 *Esta función solo es para usuarios Premium.*', 
 group: '「🥷」 *Esta funcion solo puede ser ejecutada en grupos.*', 
