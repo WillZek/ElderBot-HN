@@ -24,12 +24,12 @@ let desc = `${groupMetadata.desc?.toString() || '*ElderBot-HN*'}`
 
 let chat = global.db.data.chats[m.chat];
 
-if (!chat.isBanned) return m.reply('🍭 El Bot Está Baneado En Este Chat');
+// if (!chat.isBanned) return m.reply('🍭 El Bot Está Baneado En Este Chat');
 
-    if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
+    if (!chat.isBanned && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
     let bienvenida = `┌─★ 𝐇𝐍 𝐄𝐥𝐝𝐞𝐫𝐁𝐨𝐭\n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🥷 ${welcomeMessage}\n   │🥷  ${groupMetadata.subject}\n\n *Lee La Descripción :* ${desc}\n   └───────────────┈ ⳹\n> ${dev}`
       await conn.sendMessage(m.chat, { image: img, caption: bienvenida, mentions: [who] }, { quoted: estilo })
-    } else if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE || m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
+    } else if (!chat.isBanned && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE || m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
 
 const despMessage = global.db.data.chats[m.chat]?.despMessage || 'Se Fue😹';
 
