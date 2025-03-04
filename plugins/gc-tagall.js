@@ -16,6 +16,8 @@ const handler = async (m, { participants, args }) => {
     mensajes += `${paisdata} @${mem.id.split('@')[0]}\n`;
   }
 
+    mensajes += `╰⸼ ┄ ┄ ┄ ─  ꒰  ׅ୭ *${vs}* ୧ ׅ ꒱  ┄  ─ ┄ ⸼`;
+
   conn.sendMessage(m.chat, { text: mensajes, mentions: participants.map((a) => a.id) });
 };
 
