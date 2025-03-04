@@ -11,6 +11,7 @@ const handler = async (m, { participants }) => {
     let json = await response.json();
     
     let paisdata = json.result ? json.result.emoji : '🏳️';
+    mensajes += `*!  MENCION GENERAL  !*\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n Prueba\n\n╭  ┄ 𝅄  ۪꒰ 𝐄𝐥𝐝𝐞𝐫 𝐁𝐨𝐭 ꒱  ۟  𝅄 ┄\n`;
     mensajes += `${paisdata} @${mem.id.split('@')[0]}\n`;
   }
 
