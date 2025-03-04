@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import PhoneNumber from 'awesome-phonenumber';
 
-const handler = async (m, { participants }) => {
+const handler = async (m, { participants, args }) => {
   const pesan = args.join` `;
   const oi = `*» INFO :* ${pesan}`;
   let mensajes = '*!  MENCION GENERAL  !*\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n╭  ┄ 𝅄  ۪꒰ 𝐄𝐥𝐝𝐞𝐫 𝐁𝐨𝐭 ꒱  ۟  𝅄 ┄\n';
