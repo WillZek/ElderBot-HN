@@ -27,7 +27,7 @@ let chat = global.db.data.chats[m.chat];
 // if (!chat.isBanned) return m.reply('🍭 El Bot Está Baneado En Este Chat');
 
     if (!chat.isBanned && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
-    let bienvenida = `┌─★ 𝐇𝐍 𝐄𝐥𝐝𝐞𝐫𝐁𝐨𝐭\n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🥷 ${welcomeMessage}\n   │🥷  ${groupMetadata.subject}\n\n *Lee La Descripción :* ${desc}\n   └───────────────┈ ⳹\n> ${dev}`
+    let bienvenida = `┇➩ *ʙɪᴇɴᴠᴇɴɪᴅᴏ (ᴀ)*\n┇➩ *@${m.messageStubParameters[0].split`@`[0]}*\n┇➩ *${welcomeMessage}*\n\n*⊰ ʟᴇᴇ ʟᴀ ᴅᴇsᴄʀɪᴘᴄɪᴏ́ɴ ⊱*\n┏━━━━━━━━━━━━━┓\n${desc}\n┗━━━━━━━━━━━━━┛\n> © ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr`
       await conn.sendMessage(m.chat, { image: img, caption: bienvenida, mentions: [who] }, { quoted: estilo })
 
 let chatt = global.db.data.chats[m.chat];
