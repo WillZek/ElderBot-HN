@@ -11,7 +11,7 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   let txt = `*✧ ⊰* 𝙄𝙢𝙖𝙟𝙚𝙣𝙚𝙣 𝙢𝙚𝙟𝙤𝙧𝙖𝙙𝙖 𝙘𝙤𝙣 𝙚́𝙭𝙞𝙩𝙤 *⊱*\n> ${dev}`;
   let img = await q.download?.();
   let pr = await remini(img, "enhance");
-  conn.sendMessage(m.chat, { image: { url: pr }, caption: txt }, { quoted: m });
+  conn.sendMessage(m.chat, { image: pr }, caption: txt }, { quoted: m });
  } catch {
  return m.reply("🚩 Ocurrió un error");
  }
