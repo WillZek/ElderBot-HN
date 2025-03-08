@@ -16,7 +16,7 @@ if (isBotAdmin) {
 const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
 if (m.text.includes(linkThisGroup)) return !0
 }
-await conn.reply(m.chat, `📎 *¡Enlace detectado!*\n\n*${await this.getName(m.sender)} mandaste un enlace prohibido por lo cual seras eliminado*`, m, rcanal, )
+await conn.reply(m.chat, `☠ 𝑬𝒏𝒍𝒂𝒄𝒆 𝒅𝒆𝒕𝒆𝒄𝒕𝒂𝒅𝒐\n\n𝘕𝘰 𝘱𝘦𝘳𝘮𝘪𝘳𝘪𝘮𝘰𝘴 𝘦𝘯𝘭𝘢𝘤𝘦𝘴 de otros 𝘨𝘳𝘶𝘱𝘰𝘴, 𝘭𝘰 𝘤𝘪𝘦𝘯𝘵𝘰 *${await this.getName(m.sender)} 🤖 𝘴𝘦𝘳𝘢́𝘴 𝘦𝘹𝘱𝘶𝘭𝘴𝘢𝘥𝘰 𝘥𝘦𝘭 𝘨𝘳𝘶𝘱𝘰`, m)
 if (!isBotAdmin) return conn.reply(m.chat, `🌼 *No soy admin, no puedo eliminar intrusos*`, m, rcanal, )
 if (isBotAdmin) {
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
