@@ -30,14 +30,14 @@ const defaultMenu = {
 » 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.
 %readmore
 
-\t*(✰◠‿◠) 𝐂 𝐨 𝐦 𝐚 𝐧 𝐝 𝐨 𝐬*   
+ \t*(✰◠‿◠) 𝐂 𝐨 𝐦 𝐚 𝐧 𝐝 𝐨 𝐬*   
 `.trimStart(),
   header: '*┏━━━━━✦━━━━━┓*\n %category \n*┗━━━━━✦━━━━━┛*',
   body: '┊⚔️ ➤ %cmd',
   footer: '*┗━*\n',
-  after: `> ${dev}`,
-}
-let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
+  after: `> ${dev
+    
+  } let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, estrellas, level, role } = global.db.data.users[m.sender]
