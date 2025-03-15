@@ -23,12 +23,10 @@ let tags = {
   'logos': '「EDICION LOGOS」🍨', 
 }
 
-const imgg = ['https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg']
-
-//   before: `*•:•:•:•:•:•:•:•:•:•☾☼☽•:•.•:•.•:•:•:•:•:•*
+const imgg = ['https://qu.ax/eUgck.jpg']
+//   before: `*•:•:•:•:•:*
 const defaultMenu = {
 "*%greeting* Hola %name"
-
 » 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.
 %readmore
 
