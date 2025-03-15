@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'crow': '✨「 *`MENUS ELDERBOT`* 」👑',
+  'crow': '「 *`MENUS ELDERBOT`* 」',
   'main': '「INFO」🍨',
   'buscador': '「BUSQUEDAS」🍨',
   'fun': '「JUEGOS」🍨',
@@ -25,14 +25,14 @@ let tags = {
 
 const imgg = ['https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg']
 
-//   before: `*•:•:•:•:•:•:•:•:•:•☾☼☽•:•.•:•.•:•:•:•:•:•*
+//   before: `
 const defaultMenu = {
 "*%greeting* Hola %name"
 
 » 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.
 %readmore
 
-\t*(✰◠‿◠) 𝐂 𝐨 𝐦 𝐚 𝐧 𝐝 𝐨 𝐬*   
+\t*COMANDOS*   
 `.trimStart(),
   header: '*┏━━━━━✦━━━━━┓*\n %category \n*┗━━━━━✦━━━━━┛*',
   body: '┊⚔️ ➤ %cmd',
