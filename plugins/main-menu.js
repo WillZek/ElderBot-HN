@@ -26,7 +26,7 @@ let tags = {
 const imgg = ['https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg']
 
 const defaultMenu = {
-  before: `*•:•:•:•:•:•:•:•:•:•☾☼☽•:•.•:•.•:•:•:•:•:•*
+  before: `
 
 "✨ *%greeting* Hola %name"
 
