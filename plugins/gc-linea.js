@@ -17,7 +17,7 @@ let handler = async (m, { conn, args }) => {
         .map((k, i) => `*${i + 1}.* @${k.split("@")[0]}`)
         .join("\n") || "No hay usuarios en linea en este momento :c.";
 
-    const imgUrl = "https://qu.ax/LgBRM.jpg";
+    const imgUrl = "https://cdnmega.vercel.app/media/51Ji2TyB@6nkSVe6oFSa03Mdl4NdJIBNolYE0yUXwYk0tmL71bKE";
     const responseImg = await axios.get(imgUrl, {
       responseType: "arraybuffer",
     });
