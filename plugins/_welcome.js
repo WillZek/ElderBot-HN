@@ -29,9 +29,7 @@ let chat = global.db.data.chats[m.chat];
     if (!chat.isBanned && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
     let bienvenida = `┇➩ *ʙɪᴇɴᴠᴇɴɪᴅᴏ (ᴀ)*\n┇➩ *@${m.messageStubParameters[0].split`@`[0]}*\n┇➩ *${groupMetadata.subject}*\n\n*⊰ ʟᴇᴇ ʟᴀ ᴅᴇsᴄʀɪᴘᴄɪᴏ́ɴ ⊱*\n\n${desc}\n\n> © ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr`
       await conn.sendMessage(m.chat, { image: img, caption: bienvenida, mentions: [who] }, { quoted: estilo })
-
-let chatt = global.db.data.chats[m.chat];
-    } else if (!chatt.isBanned && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE || m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
+    } else if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE || m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
 
 const despMessage = global.db.data.chats[m.chat]?.despMessage || 'Se Fue😹';
 
