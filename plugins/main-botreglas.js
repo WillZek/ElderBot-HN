@@ -19,7 +19,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     };
 
     let crow = `🫐 *Respeta las reglas de ElderBot*\n
-✰ No llamar Al Bot
+✰ No llamarAl ELDER-BOT
 ✰ No hacer spam
 ✰ Contacta al creador si es necesario
 ✰ Pedir permiso para añadir al bot a un grupo
