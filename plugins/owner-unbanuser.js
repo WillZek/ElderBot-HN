@@ -14,7 +14,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
         db[user].banRazon = '';
         const nametag = await conn.getName(user);
         const nn = conn.getName(m.sender);
-        await conn.reply(m.chat, `✨ El usuario *${nametag}* ha sido desbaneado.`, m, { mentionedJid: [user] });
+        await conn.reply(m.chat, `✅ ᴇʟ ᴜsᴜᴀʀɪᴏ*${nametag}* ʜᴀ sɪᴅᴏ ᴅᴇsʙᴀɴᴇᴀᴅᴏ.`, m, { mentionedJid: [user] });
     } else {
         await conn.reply(m.chat, `🚩 El usuario no está registrado.`, m);
     }
