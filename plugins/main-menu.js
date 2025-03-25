@@ -4,23 +4,23 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'crow': '「 *`MENUS ELDERBOT`* 」',
-  'main': '「INFO」🍨',
-  'buscador': '「BUSQUEDAS」🍨',
-  'fun': '「JUEGOS」🍨',
-  'serbot': '「SUB BOTS」🍨',
-  'rpg': '「RPG」🍨',
-  'rg': '「REGISTRO」🍨',
-  'sticker': '「STICKERS」🍨',
-  'emox': '「ANIMES」🍨',
-  'database': '「DATABASE」🍨',
-  'grupo': '「GRUPOS」🍨',
-  'nable': '「ON / OFF」', 
-  'descargas': '「DESCARGAS」🍨',
-  'tools': '「HERRAMIENTAS」🍨',
-  'info': '「INFORMACIÓN」🍨',
-  'owner': '「CREADOR」🍨',
-  'logos': '「EDICION LOGOS」🍨', 
+  'crow': '「 𝗠𝗘𝗡𝗨́𝗦 𝗘𝗟𝗗𝗘𝗥-𝗕𝗢𝗧」',
+  'main': '「𝗜𝗡𝗙𝗢」🍨',
+  'buscador': '「𝗕𝗨𝗦𝗤𝗨𝗘𝗗𝗔𝗦」🍨',
+  'fun': '「𝗝𝗨𝗘𝗚𝗢𝗦」🍨',
+  'serbot': '「𝗦𝗨𝗕 𝗕𝗢𝗧𝗦」🍨',
+  'rpg': '「𝗥𝗣𝗚」🍨',
+  'rg': '「𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗢」🍨',
+  'sticker': '「𝗦𝗧𝗜𝗖𝗞𝗘𝗥𝗦」🍨',
+  'emox': '「𝗔𝗡𝗜𝗠𝗘𝗦」🍨',
+  'database': '「𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘」🍨',
+  'grupo': '「𝗚𝗥𝗨𝗣𝗢𝗦」🍨',
+  'nable': '「𝗢𝗡 / 𝗢𝗙𝗙」', 
+  'descargas': '「𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗦」🍨',
+  'tools': '「𝗛𝗘𝗥𝗥𝗔𝗠𝗜𝗘𝗡𝗧𝗔𝗦」🍨',
+  'info': '「𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗜𝗢́𝗡」🍨',
+  'owner': '「𝗖𝗥𝗘𝗔𝗗𝗢𝗥」🍨',
+  'logos': '「𝗘𝗗𝗜𝗖𝗜𝗢𝗡 𝗟𝗢𝗚𝗢𝗦」🍨', 
 }
 
 const imgg = ['https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg']
@@ -33,7 +33,7 @@ const defaultMenu = {
 » 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.
 %readmore
 
-\t*(✰◠‿◠) 𝐂 𝐨 𝐦 𝐚 𝐧 𝐝 𝐨 𝐬*   
+\t*🚩 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦*   
 `.trimStart(),
   header: '*┏━━━━━✦━━━━━┓*\n %category \n*┗━━━━━✦━━━━━┛*',
   body: '┊⚔️ ➤ %cmd',
