@@ -11,7 +11,7 @@ ${listAdmin}
 
 🍭 Mensaje: ${oi}
 
-『✦』Este comando solo se puede ejecutar si tienes algún problema o duda con el *Bot*, si lo usas con otras intenciones se te *baneara* o *eliminara* del grupo.`.trim();
+.`.trim();
   conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, {mentions: [...groupAdmins.map((v) => v.id), owner]});
 };
 handler.help = ['admins <texto>'];
