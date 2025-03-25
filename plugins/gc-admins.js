@@ -9,9 +9,9 @@ const handler = async (m, {conn, participants, groupMetadata, args}) => {
   
 ${listAdmin}
 
-🍭 Mensaje: ${oi}
+*🚩 Mensaje*: ${oi}
 
-.`.trim();
+`.trim();
   conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, {mentions: [...groupAdmins.map((v) => v.id), owner]});
 };
 handler.help = ['admins <texto>'];
