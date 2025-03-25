@@ -22,7 +22,7 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-conn.reply(m.chat, `⚙️ *Fue agregado como admin del grupo con exito.*`, m)
+conn.reply(m.chat, `*🚩𝖥𝗎𝖾́ 𝖺𝗀𝗋𝖾𝗀𝖺𝖽𝗈 𝖼𝗈𝗆𝗈 𝖺𝖽𝗆𝗂𝗇 𝖽𝖾𝗅 𝗀𝗋𝗎𝗉𝗈 𝖼𝗈𝗇 𝖾𝗑𝗂𝗍𝗈.*`, m)
 }
 
 }
