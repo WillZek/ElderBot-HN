@@ -12,6 +12,8 @@ async function handler(m, {groupMetadata}) {
 
   let txt = `*FORMANDO PAREJA LES DESEO LO MEJOR 💏*\n> ${toM(a)}, Deberías Empezar Una Cita con ${toM(b)} 🌹`;
 
+const stickerUrl = 'https://files.catbox.moe/ajtz0u.webp';
+m.react ('💝');
 
   await conn.sendFile(m.chat, stickerUrl, 'sticker.webp', '', m, null);
   await conn.sendMessage(m.chat, { text: txt, mentions: [a, b] });
