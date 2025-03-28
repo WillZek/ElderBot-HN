@@ -1,77 +1,46 @@
-/* *[ ❀ YTMP4 ]*
+/* [🍭] YOUTUBE VIDEO
+- By WillZek 
+*/
+
 import fetch from 'node-fetch';
+import fg from 'senna-fg';
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) return conn.reply(m.chat, `💛 Ingresa un link de YouTube válido\n> Ejemplo https://youtu.be/P4LfHsUnNL8?si=ahDKJ5h0cW-EB9C9`, m, rcanal);
+let handler = async(m, { conn, args, text }) => {
 
-  await m.react('🕓');
+if (!text) return m.reply(`🍭 Ingresa Un Link De YouTube\n> *Ejemplo:* https://youtube.com/shorts/ZisXJqH1jtw?si=0RZacIJU5zhoCmWh`);
 
-  try {
-    let api = await (await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${text}`)).json();
-    let dl_url = api.data.dl[0];
+m.react(rwait);
 
-    await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `${resp}` },{ quoted: m });
 
-    await m.react('✅');
-  } catch (error) {
-    console.error(error);
-    await m.react('❌');
-    conn.reply(m.chat, `✖️ error comando mal usado ${usedPrefix + commando} *<url>*  `, m, rcanal);
-  }
-};
+// let video = await (await fetch(`https://api.agungny.my.id/api/youtube-video?url=${text}`)).json();
 
-handler.help = ['ytmp4 *<url>*'];
-handler.tags = ['descargas'];
-handler.command = ['ytmp4', 'ytv'];
-handler.estrellas = 4;
-handler.register = true;
+let data = await fg.ytmp4(text);
+let url = data.dl_url;
+// let link = video.result.result.download;
 
-export default handler;
+if (!link) return m.reply('《✧》Hubo un error al intentar acceder al link.\n> Si el problema persiste, reportalo en el grupo de soporte.');
 
-/* 
-- Downloader Ytmp4 By DarkCore
-- https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y
-- Parchado por DarkCore... vip plus
+/* let limit = 5 * 1024 * 1024; // 5MB porque si
+
+if (video?.data?.size > limit) {
+await conn.sendMessage(m.chat, {
+      document: { url: url },
+      fileName: `${data.title}.mp4`,
+      mimetype: 'video/mp4', caption: '✅ Descargado Con Exito.',
+      thumbnail: video.thumbnail },          
+      { quoted: m })
+
+} else { 
 */
 
-/* import fetch from 'node-fetch';
+await conn.sendMessage(m.chat, {
+      video: { url: url },
+      mimetype: "video/mp4",
+      caption: `${dev}`,
+    }, { quoted: m });
+    m.react(done);
+ }
 
-let handler = async (m, { conn, text }) => {
-    if (!text) return conn.reply(m.chat, '🍟 Ingresa un link de YouTube', m);
-
-    try {
-        await m.react('🕒');
-
-        const apiKey = '777izumi';
-        const apiUrl = `https://dark-core-api.vercel.app/api/download/ytmp4?url=${encodeURIComponent(text)}&type=video&quality=hdHigh&key=${apiKey}`;
-        const response = await fetch(apiUrl);
-        const result = await response.json();
-
-        if (!result.success || !result.downloadLink) {
-            throw new Error('Error al obtener datos de la API.');
-        }
-
-        const videoUrl = result.downloadLink;
-        const fileName = 'video.mp4';
-
-        let CB = `🍃 *Video descargado correctamente*`;
-
-        await conn.sendMessage(m.chat, { 
-            video: { url: videoUrl }, 
-            caption: CB 
-        }, { quoted: m });
-
-        await m.react('✅');
-    } catch (error) {
-        console.error(error);
-        await m.react('✖'); 
-        m.reply(`❌ *Error:* ${error.message || 'Ocurrió un error desconocido'}`);
-    }
-};
-
-handler.help = ['ytmp4 *<url>*']; 
-handler.command = ['ytmp4'];
-handler.tags = ['descargas'];
+handler.command = ['ytv', 'ytmp4', 'ymp4']
 
 export default handler;
-*/
