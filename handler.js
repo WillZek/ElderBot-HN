@@ -502,14 +502,14 @@ global.dfail = (type, m, conn) => {
 const msg = {
 rowner: '*「✧」 Esta función solo puede ser usada por mi creador.*\n> HN ELDER (https://wa.me/50493374445)', 
 owner: '*「✧」 Esta función solo puede ser usada por mi desarrollador.*\n> HN ELDER (https://wa.me/50493374445)', 
-mods: '「🥷」 *Esta función solo puede ser usada los moderadores del bot*', 
-premium: '「🥷」 *Esta función solo es para usuarios Premium.*', 
-group: '「🥷」 *Esta funcion solo puede ser ejecutada en grupos.*', 
-private: '「🥷」 *Esta función solo puede ser usada en chat privado.*', 
-admin: '「🥷」 *Este comando solo puede ser usado por admins.*', 
-botAdmin: '「🥷」 *Para usar esta función debo ser admin.*',
-unreg: `「🥷」 *No te encuentras registrado, registrese para usar esta función*\n\n*/reg nombre.edad*\n\n*Ejemplo* : */reg Elder.19*`,
-restrict: '「🥷」 *Esta característica esta desactivada.*'
+mods: '✦ *Esta función solo puede ser usada los moderadores del bot*', 
+premium: '✦ *Esta función solo es para usuarios Premium.*', 
+group: '✦ *𝙀𝙨𝙩𝙖 𝙛𝙪𝙣𝙘𝙞𝙤́𝙣 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙨𝙚𝙧 𝙚𝙟𝙚𝙘𝙪𝙩𝙖𝙙𝙖 𝙚𝙣 𝙜𝙧𝙪𝙥𝙤𝙨.*', 
+private: '✦ *Esta función solo puede ser usada en chat privado.*', 
+admin: '✦ *Este comando solo puede ser usado por admins.*', 
+botAdmin: '✦ *Para usar esta función debo ser admin.*',
+unreg: `✦ *No te encuentras registrado, registrese para usar esta función*\n\n*/reg nombre.edad*\n\n*Ejemplo* : */reg Elder.19*`,
+restrict: '✦ *Esta característica esta desactivada.*'
 }[type];
 if (msg) return conn.reply(m.chat, msg, m).then(_ => m.react('✖️'))}
 
