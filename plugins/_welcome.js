@@ -33,7 +33,7 @@ let chat = global.db.data.chats[m.chat];
 
 const despMessage = global.db.data.chats[m.chat]?.despMessage || 'Se Fue😹';
 
-     let bye = `┏━━━━━━━━━━━━━━━━┓\n┇⚔️➤ *sᴇ́ ғᴜᴇ́ ᴊᴀᴍᴀs ᴛᴇ́ ǫᴜɪsɪᴍᴏs ᴀᴄᴀ́*\n┇\n┇⚔️➤ @${m.messageStubParameters[0].split`@`[0]}\n┇\n┇⚔️➤ *ᴜɴᴀ ᴍʀᴅᴀ ᴍᴇɴᴏs 😈*\n┗━━━━━━━━━━━━━━━━┛`
+     let bye = `\n*│┊➺* *𝙎𝙚 𝙛𝙪𝙚́ 𝙅𝙖𝙢𝙖́𝙨 𝙩𝙚́ 𝙦𝙪𝙞𝙨𝙞𝙢𝙤𝙨 𝙖𝙦𝙪𝙞́*\n┇\n*│┊➺* @${m.messageStubParameters[0].split`@`[0]}\n┇\n*│┊➺* *𝙐𝙣𝙖 𝙢𝙧𝙙 𝙢𝙚𝙣𝙤𝙨 😈*\n┗━━━━━━━━━━━━━━━━┛`
       await conn.sendMessage(m.chat, { image: img, caption: bye, mentions: [who] }, { quoted: estilo })
     }
   }
