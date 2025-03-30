@@ -1,7 +1,7 @@
-ʟᴇᴛ ʜᴀɴᴅʟᴇʀ = ᴀsʏɴᴄ (ᴍ, { ᴄᴏɴɴ }) => {
- ʟᴇᴛ ᴛxᴛ = `╔═══════════════╗
+let handler = async (m, { conn }) => {
+ let txt = `╔═══════════════╗
 ┇➤ 𝙃𝙊𝙇𝘼, 𝙃𝙐𝙈𝘼𝙉𝙊
-┇ *\`${ᴄᴏɴɴ.ɢᴇᴛɴᴀᴍᴇ(ᴍ.sᴇɴᴅᴇʀ)}\`* 
+┇ *\`${conn.getName(m.sender)}\`* 
 ╚═══════════════╝
 
 » 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.
@@ -25,6 +25,7 @@
 ☆ 🎯 *ᴇɴʜᴀɴᴄᴇ*
 ☆ 🎯 *ᴡᴀʟʟᴘᴀᴘᴇʀ <ᴛxᴛ>*
 ☆ 🎯 *ɢᴇᴍɪɴɪ / ɪᴀ*
+☆ 🎯 *ᴘɪxᴀɪ*
 
  *\`ʙᴜꜱᴏ̨ᴜᴇᴅᴀꜱ\`*
 
@@ -175,220 +176,219 @@
 ☆ ⚡ *ʟᴏɢᴏᴘᴏʀᴛᴀᴅᴀғғ*
 ☆ ⚡ *ʟᴏɢᴏᴘᴜɢ*
 ☆ ⚡ *ʟᴏɢᴏɢᴜᴇʀʀᴇʀᴏ*
- 
-> *© ⍴᥆ᥕᥱʀᥱძ ᑲᥡ һᥒ ᥱᥣძᥱʀ*`.ᴛʀɪᴍ();
+> *© ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr*`.trim();
 
-ᴍ.ʀᴇᴀᴄᴛ('✅');
-ʟᴇᴛ ᴘᴇʀғɪʟ = ᴀᴡᴀɪᴛ ᴄᴏɴɴ.ᴘʀᴏғɪʟᴇᴘɪᴄᴛᴜʀᴇᴜʀʟ(ᴍ.sᴇɴᴅᴇʀ, 'ɪᴍᴀɢᴇ').ᴄᴀᴛᴄʜ(_ => 'ʜᴛᴛᴘs://ɪ.ɪʙʙ.ᴄᴏ/5xᴍs19ɴx/ғɪʟᴇ.ᴊᴘɢ');
+m.react('✅');
+let perfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/5xMs19nx/file.jpg');
 
-/* ᴀᴡᴀɪᴛ ᴄᴏɴɴ.sᴇɴᴅᴍᴇssᴀɢᴇ(ᴍ.ᴄʜᴀᴛ, { ᴛᴇxᴛ: ᴛxᴛ, ᴄᴏɴᴛᴇxᴛɪɴғᴏ: { ᴇxᴛᴇʀɴᴀʟᴀᴅʀᴇᴘʟʏ: { ᴛɪᴛʟᴇ: ʙᴏᴛɴᴀᴍᴇ, ʙᴏᴅʏ: ᴅᴇᴠ, ᴛʜᴜᴍʙɴᴀɪʟᴜʀʟ: ʙᴀɴɴᴇʀ, ᴍᴇᴅɪᴀᴛʏᴘᴇ: 1, sʜᴏᴡᴀᴅᴀᴛᴛʀɪʙᴜᴛɪᴏɴ: ᴛʀᴜᴇ, ʀᴇɴᴅᴇʀʟᴀʀɢᴇʀᴛʜᴜᴍʙɴᴀɪʟ: ᴛʀᴜᴇ }}} , { ǫᴜᴏᴛᴇᴅ: ᴍ })
+/* await conn.sendMessage(m.chat, { text: txt, contextInfo: { externalAdReply: { title: botname, body: dev, thumbnailUrl: banner, mediaType: 1, showAdAttribution: true, renderLargerThumbnail: true }}} , { quoted: m })
 };
 */
-ʟᴇᴛ ʙᴀɴɴ = 'ʜᴛᴛᴘs://ᴄᴅɴᴍᴇɢᴀ.ᴠᴇʀᴄᴇʟ.ᴀᴘᴘ/ᴍᴇᴅɪᴀ/9ᴡʙ1ʜʟʀᴛ@ᴊᴄɴ5ʏʀᴢ18ɴᴊᴏᴋᴏᴘᴍʏᴋ-ss9ᴜ-ᴏᴢᴄ4sʏᴋ_2ʀsᴠxxǫ6ᴡxɪ';
+let bann = 'https://cdnmega.vercel.app/media/9wB1HLrT@Jcn5yrz18NjokOpmyK-SS9u-OZc4SyK_2rsVxxQ6wXI';
 
-ᴄᴏɴɴ.sᴇɴᴅᴍᴇssᴀɢᴇ(ᴍ.ᴄʜᴀᴛ, { ɪᴍᴀɢᴇ: { ᴜʀʟ: ʙᴀɴɴ }, ᴄᴀᴘᴛɪᴏɴ: ᴛxᴛ }, { ǫᴜᴏᴛᴇᴅ: ᴍ });
+conn.sendMessage(m.chat, { image: { url: bann }, caption: txt }, { quoted: m });
 }
 
-ʜᴀɴᴅʟᴇʀ.ᴄᴏᴍᴍᴀɴᴅ = ['ᴀʟʟᴍᴇɴᴜ', 'ᴍᴇɴᴜ', 'ᴍᴇɴᴜᴀʟʟ', 'ᴍᴇɴᴜᴄᴏᴍᴘʟᴇᴛᴏ'];
+handler.command = ['allmenu', 'menu', 'menuall', 'menucompleto'];
 
-ᴇxᴘᴏʀᴛ ᴅᴇғᴀᴜʟᴛ ʜᴀɴᴅʟᴇʀ;
+export default handler;
 
-/* ɪᴍᴘᴏʀᴛ { ᴘʀᴏᴍɪsᴇs } ғʀᴏᴍ 'ғs'
-ɪᴍᴘᴏʀᴛ { ᴊᴏɪɴ } ғʀᴏᴍ 'ᴘᴀᴛʜ'
-ɪᴍᴘᴏʀᴛ ғᴇᴛᴄʜ ғʀᴏᴍ 'ɴᴏᴅᴇ-ғᴇᴛᴄʜ'
-ɪᴍᴘᴏʀᴛ { xᴘʀᴀɴɢᴇ } ғʀᴏᴍ '../ʟɪʙ/ʟᴇᴠᴇʟʟɪɴɢ.ᴊs'
+/* import { promises } from 'fs'
+import { join } from 'path'
+import fetch from 'node-fetch'
+import { xpRange } from '../lib/levelling.js'
 
-ʟᴇᴛ ᴛᴀɢs = {
-  'ᴄʀᴏᴡ': '✨「 *`ᴍᴇɴᴜs ᴇʟᴅᴇʀ-ʙᴏᴛ`* 」👑',
-  'ᴍᴀɪɴ': '「ɪɴғᴏ」🍨',
-  'ʙᴜsᴄᴀᴅᴏʀ': '「ʙᴜsǫᴜᴇᴅᴀs」🍨',
-  'ғᴜɴ': '「ᴊᴜᴇɢᴏs」🍨',
-  'sᴇʀʙᴏᴛ': '「sᴜʙ ʙᴏᴛs」🍨',
-  'ʀᴘɢ': '「ʀᴘɢ」🍨',
-  'ʀɢ': '「ʀᴇɢɪsᴛʀᴏ」🍨',
-  'sᴛɪᴄᴋᴇʀ': '「sᴛɪᴄᴋᴇʀs」🍨',
-  'ᴇᴍᴏx': '「ᴀɴɪᴍᴇs」🍨',
-  'ᴅᴀᴛᴀʙᴀsᴇ': '「ᴅᴀᴛᴀʙᴀsᴇ」🍨',
-  'ɢʀᴜᴘᴏ': '「ɢʀᴜᴘᴏs」🍨',
-  'ɴᴀʙʟᴇ': '「ᴏɴ / ᴏғғ」', 
-  'ᴅᴇsᴄᴀʀɢᴀs': '「ᴅᴇsᴄᴀʀɢᴀs」🍨',
-  'ᴛᴏᴏʟs': '「ʜᴇʀʀᴀᴍɪᴇɴᴛᴀs」🍨',
-  'ɪɴғᴏ': '「ɪɴғᴏʀᴍᴀᴄɪᴏ́ɴ」🍨',
-  'ᴏᴡɴᴇʀ': '「ᴄʀᴇᴀᴅᴏʀ」🍨',
-  'ʟᴏɢᴏs': '「ᴇᴅɪᴄɪᴏɴ ʟᴏɢᴏs」🍨', 
+let tags = {
+  'crow': '✨「 *`MENUS ELDER-BOT`* 」👑',
+  'main': '「INFO」🍨',
+  'buscador': '「BUSQUEDAS」🍨',
+  'fun': '「JUEGOS」🍨',
+  'serbot': '「SUB BOTS」🍨',
+  'rpg': '「RPG」🍨',
+  'rg': '「REGISTRO」🍨',
+  'sticker': '「STICKERS」🍨',
+  'emox': '「ANIMES」🍨',
+  'database': '「DATABASE」🍨',
+  'grupo': '「GRUPOS」🍨',
+  'nable': '「ON / OFF」', 
+  'descargas': '「DESCARGAS」🍨',
+  'tools': '「HERRAMIENTAS」🍨',
+  'info': '「INFORMACIÓN」🍨',
+  'owner': '「CREADOR」🍨',
+  'logos': '「EDICION LOGOS」🍨', 
 }
 
-ᴄᴏɴsᴛ ɪᴍɢɢ = ['ʜᴛᴛᴘs://ғɪʟᴇs.ᴄᴀᴛʙᴏx.ᴍᴏᴇ/ɪ7ᴜᴏ2ʟ.ᴊᴘɢ', 'ʜᴛᴛᴘs://ғɪʟᴇs.ᴄᴀᴛʙᴏx.ᴍᴏᴇ/ɪ7ᴜᴏ2ʟ.ᴊᴘɢ', 'ʜᴛᴛᴘs://ғɪʟᴇs.ᴄᴀᴛʙᴏx.ᴍᴏᴇ/ɪ7ᴜᴏ2ʟ.ᴊᴘɢ']
+const imgg = ['https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg', 'https://files.catbox.moe/i7uo2l.jpg']
 
-//   ʙᴇғᴏʀᴇ: `*•:•:•:•:•:•:•:•:•:•☾☼☽•:•.•:•.•:•:•:•:•:•*
-ᴄᴏɴsᴛ ᴅᴇғᴀᴜʟᴛᴍᴇɴᴜ = {
-"*%ɢʀᴇᴇᴛɪɴɢ* ʜᴏʟᴀ %ɴᴀᴍᴇ"
+//   before: `*•:•:•:•:•:•:•:•:•:•☾☼☽•:•.•:•.•:•:•:•:•:•*
+const defaultMenu = {
+"*%greeting* Hola %name"
 
 » 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.
-%ʀᴇᴀᴅᴍᴏʀᴇ
+%readmore
 
-\ᴛ*(✰◠‿◠) 𝐂 𝐨 𝐦 𝐚 𝐧 𝐝 𝐨 𝐬*   
-`.ᴛʀɪᴍsᴛᴀʀᴛ(),
-  ʜᴇᴀᴅᴇʀ: '*┏━━━━━✦━━━━━┓*\ɴ %ᴄᴀᴛᴇɢᴏʀʏ \ɴ*┗━━━━━✦━━━━━┛*',
-  ʙᴏᴅʏ: '┊➤ %ᴄᴍᴅ',
-  ғᴏᴏᴛᴇʀ: '*┗━*\ɴ',
-  ᴀғᴛᴇʀ: `> ${ᴅᴇᴠ}`,
+\t*(✰◠‿◠) 𝐂 𝐨 𝐦 𝐚 𝐧 𝐝 𝐨 𝐬*   
+`.trimStart(),
+  header: '*┏━━━━━✦━━━━━┓*\n %category \n*┗━━━━━✦━━━━━┛*',
+  body: '┊➤ %cmd',
+  footer: '*┗━*\n',
+  after: `> ${dev}`,
 }
-ʟᴇᴛ ʜᴀɴᴅʟᴇʀ = ᴀsʏɴᴄ (ᴍ, { ᴄᴏɴɴ, ᴜsᴇᴅᴘʀᴇғɪx: _ᴘ, __ᴅɪʀɴᴀᴍᴇ }) => {
-  ᴛʀʏ {
-    ʟᴇᴛ _ᴘᴀᴄᴋᴀɢᴇ = ᴊsᴏɴ.ᴘᴀʀsᴇ(ᴀᴡᴀɪᴛ ᴘʀᴏᴍɪsᴇs.ʀᴇᴀᴅғɪʟᴇ(ᴊᴏɪɴ(__ᴅɪʀɴᴀᴍᴇ, '../ᴘᴀᴄᴋᴀɢᴇ.ᴊsᴏɴ')).ᴄᴀᴛᴄʜ(_ => ({}))) || {}
-    ʟᴇᴛ { ᴇxᴘ, ᴇsᴛʀᴇʟʟᴀs, ʟᴇᴠᴇʟ, ʀᴏʟᴇ } = ɢʟᴏʙᴀʟ.ᴅʙ.ᴅᴀᴛᴀ.ᴜsᴇʀs[ᴍ.sᴇɴᴅᴇʀ]
-    ʟᴇᴛ { ᴍɪɴ, xᴘ, ᴍᴀx } = xᴘʀᴀɴɢᴇ(ʟᴇᴠᴇʟ, ɢʟᴏʙᴀʟ.ᴍᴜʟᴛɪᴘʟɪᴇʀ)
-    ʟᴇᴛ ɴᴀᴍᴇ = ᴀᴡᴀɪᴛ ᴄᴏɴɴ.ɢᴇᴛɴᴀᴍᴇ(ᴍ.sᴇɴᴅᴇʀ)
-    ᴇxᴘ = ᴇxᴘ || 'ᴅᴇsᴄᴏɴᴏᴄɪᴅᴀ';
-    ʀᴏʟᴇ = ʀᴏʟᴇ || 'ᴀʟᴅᴇᴀɴᴏ';
-    ʟᴇᴛ ᴅ = ɴᴇᴡ ᴅᴀᴛᴇ(ɴᴇᴡ ᴅᴀᴛᴇ + 3600000)
-    ʟᴇᴛ ʟᴏᴄᴀʟᴇ = 'ᴇs'
-    ʟᴇᴛ ᴡᴇᴛᴏɴ = ['ᴘᴀʜɪɴɢ', 'ᴘᴏɴ', 'ᴡᴀɢᴇ', 'ᴋʟɪᴡᴏɴ', 'ʟᴇɢɪ'][ᴍᴀᴛʜ.ғʟᴏᴏʀ(ᴅ / 84600000) % 5]
-    ʟᴇᴛ ᴡᴇᴇᴋ = ᴅ.ᴛᴏʟᴏᴄᴀʟᴇᴅᴀᴛᴇsᴛʀɪɴɢ(ʟᴏᴄᴀʟᴇ, { ᴡᴇᴇᴋᴅᴀʏ: 'ʟᴏɴɢ' })
-    ʟᴇᴛ ᴅᴀᴛᴇ = ᴅ.ᴛᴏʟᴏᴄᴀʟᴇᴅᴀᴛᴇsᴛʀɪɴɢ(ʟᴏᴄᴀʟᴇ, {
-      ᴅᴀʏ: 'ɴᴜᴍᴇʀɪᴄ',
-      ᴍᴏɴᴛʜ: 'ʟᴏɴɢ',
-      ʏᴇᴀʀ: 'ɴᴜᴍᴇʀɪᴄ'
+let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
+  try {
+    let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
+    let { exp, estrellas, level, role } = global.db.data.users[m.sender]
+    let { min, xp, max } = xpRange(level, global.multiplier)
+    let name = await conn.getName(m.sender)
+    exp = exp || 'Desconocida';
+    role = role || 'Aldeano';
+    let d = new Date(new Date + 3600000)
+    let locale = 'es'
+    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
+    let week = d.toLocaleDateString(locale, { weekday: 'long' })
+    let date = d.toLocaleDateString(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
     })
-    ʟᴇᴛ ᴅᴀᴛᴇɪsʟᴀᴍɪᴄ = ɪɴᴛʟ.ᴅᴀᴛᴇᴛɪᴍᴇғᴏʀᴍᴀᴛ(ʟᴏᴄᴀʟᴇ + '-ᴛɴ-ᴜ-ᴄᴀ-ɪsʟᴀᴍɪᴄ', {
-      ᴅᴀʏ: 'ɴᴜᴍᴇʀɪᴄ',
-      ᴍᴏɴᴛʜ: 'ʟᴏɴɢ',
-      ʏᴇᴀʀ: 'ɴᴜᴍᴇʀɪᴄ'
-    }).ғᴏʀᴍᴀᴛ(ᴅ)
-ʟᴇᴛ ʙᴏᴛɪɴғᴏ = (ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ == ɢʟᴏʙᴀʟ.ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ ? 'ᴏғɪᴄɪᴀʟ' : 'sᴜʙ-ʙᴏᴛ');
+    let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    }).format(d)
+let botinfo = (conn.user.jid == global.conn.user.jid ? 'Oficial' : 'Sub-Bot');
 
-    ʟᴇᴛ ᴛɪᴍᴇ = ᴅ.ᴛᴏʟᴏᴄᴀʟᴇᴛɪᴍᴇsᴛʀɪɴɢ(ʟᴏᴄᴀʟᴇ, {
-      ʜᴏᴜʀ: 'ɴᴜᴍᴇʀɪᴄ',
-      ᴍɪɴᴜᴛᴇ: 'ɴᴜᴍᴇʀɪᴄ',
-      sᴇᴄᴏɴᴅ: 'ɴᴜᴍᴇʀɪᴄ'
+    let time = d.toLocaleTimeString(locale, {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
     })
-    ʟᴇᴛ _ᴜᴘᴛɪᴍᴇ = ᴘʀᴏᴄᴇss.ᴜᴘᴛɪᴍᴇ() * 1000
-    ʟᴇᴛ _ᴍᴜᴘᴛɪᴍᴇ
-    ɪғ (ᴘʀᴏᴄᴇss.sᴇɴᴅ) {
-      ᴘʀᴏᴄᴇss.sᴇɴᴅ('ᴜᴘᴛɪᴍᴇ')
-      _ᴍᴜᴘᴛɪᴍᴇ = ᴀᴡᴀɪᴛ ɴᴇᴡ ᴘʀᴏᴍɪsᴇ(ʀᴇsᴏʟᴠᴇ => {
-        ᴘʀᴏᴄᴇss.ᴏɴᴄᴇ('ᴍᴇssᴀɢᴇ', ʀᴇsᴏʟᴠᴇ)
-        sᴇᴛᴛɪᴍᴇᴏᴜᴛ(ʀᴇsᴏʟᴠᴇ, 1000)
+    let _uptime = process.uptime() * 1000
+    let _muptime
+    if (process.send) {
+      process.send('uptime')
+      _muptime = await new Promise(resolve => {
+        process.once('message', resolve)
+        setTimeout(resolve, 1000)
       }) * 1000
     }
-    ʟᴇᴛ ᴍᴜᴘᴛɪᴍᴇ = ᴄʟᴏᴄᴋsᴛʀɪɴɢ(_ᴍᴜᴘᴛɪᴍᴇ)
-    ʟᴇᴛ ᴜᴘᴛɪᴍᴇ = ᴄʟᴏᴄᴋsᴛʀɪɴɢ(_ᴜᴘᴛɪᴍᴇ)
-    ʟᴇᴛ ᴛᴏᴛᴀʟʀᴇɢ = ᴏʙᴊᴇᴄᴛ.ᴋᴇʏs(ɢʟᴏʙᴀʟ.ᴅʙ.ᴅᴀᴛᴀ.ᴜsᴇʀs).ʟᴇɴɢᴛʜ
-    ʟᴇᴛ ʀᴛᴏᴛᴀʟʀᴇɢ = ᴏʙᴊᴇᴄᴛ.ᴠᴀʟᴜᴇs(ɢʟᴏʙᴀʟ.ᴅʙ.ᴅᴀᴛᴀ.ᴜsᴇʀs).ғɪʟᴛᴇʀ(ᴜsᴇʀ => ᴜsᴇʀ.ʀᴇɢɪsᴛᴇʀᴇᴅ == ᴛʀᴜᴇ).ʟᴇɴɢᴛʜ
-    ʟᴇᴛ ʜᴇʟᴘ = ᴏʙᴊᴇᴄᴛ.ᴠᴀʟᴜᴇs(ɢʟᴏʙᴀʟ.ᴘʟᴜɢɪɴs).ғɪʟᴛᴇʀ(ᴘʟᴜɢɪɴ => !ᴘʟᴜɢɪɴ.ᴅɪsᴀʙʟᴇᴅ).ᴍᴀᴘ(ᴘʟᴜɢɪɴ => {
-      ʀᴇᴛᴜʀɴ {
-        ʜᴇʟᴘ: ᴀʀʀᴀʏ.ɪsᴀʀʀᴀʏ(ᴘʟᴜɢɪɴ.ᴛᴀɢs) ? ᴘʟᴜɢɪɴ.ʜᴇʟᴘ : [ᴘʟᴜɢɪɴ.ʜᴇʟᴘ],
-        ᴛᴀɢs: ᴀʀʀᴀʏ.ɪsᴀʀʀᴀʏ(ᴘʟᴜɢɪɴ.ᴛᴀɢs) ? ᴘʟᴜɢɪɴ.ᴛᴀɢs : [ᴘʟᴜɢɪɴ.ᴛᴀɢs],
-        ᴘʀᴇғɪx: 'ᴄᴜsᴛᴏᴍᴘʀᴇғɪx' ɪɴ ᴘʟᴜɢɪɴ,
-        ᴇsᴛʀᴇʟʟᴀs: ᴘʟᴜɢɪɴ.ᴇsᴛʀᴇʟʟᴀs,
-        ᴘʀᴇᴍɪᴜᴍ: ᴘʟᴜɢɪɴ.ᴘʀᴇᴍɪᴜᴍ,
-        ᴇɴᴀʙʟᴇᴅ: !ᴘʟᴜɢɪɴ.ᴅɪsᴀʙʟᴇᴅ,
+    let muptime = clockString(_muptime)
+    let uptime = clockString(_uptime)
+    let totalreg = Object.keys(global.db.data.users).length
+    let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
+    let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
+      return {
+        help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
+        tags: Array.isArray(plugin.tags) ? plugin.tags : [plugin.tags],
+        prefix: 'customPrefix' in plugin,
+        estrellas: plugin.estrellas,
+        premium: plugin.premium,
+        enabled: !plugin.disabled,
       }
     })
-    ғᴏʀ (ʟᴇᴛ ᴘʟᴜɢɪɴ ᴏғ ʜᴇʟᴘ)
-      ɪғ (ᴘʟᴜɢɪɴ && 'ᴛᴀɢs' ɪɴ ᴘʟᴜɢɪɴ)
-        ғᴏʀ (ʟᴇᴛ ᴛᴀɢ ᴏғ ᴘʟᴜɢɪɴ.ᴛᴀɢs)
-          ɪғ (!(ᴛᴀɢ ɪɴ ᴛᴀɢs) && ᴛᴀɢ) ᴛᴀɢs[ᴛᴀɢ] = ᴛᴀɢ
-    ᴄᴏɴɴ.ᴍᴇɴᴜ = ᴄᴏɴɴ.ᴍᴇɴᴜ ? ᴄᴏɴɴ.ᴍᴇɴᴜ : {}
-    ʟᴇᴛ ʙᴇғᴏʀᴇ = ᴄᴏɴɴ.ᴍᴇɴᴜ.ʙᴇғᴏʀᴇ || ᴅᴇғᴀᴜʟᴛᴍᴇɴᴜ.ʙᴇғᴏʀᴇ
-    ʟᴇᴛ ʜᴇᴀᴅᴇʀ = ᴄᴏɴɴ.ᴍᴇɴᴜ.ʜᴇᴀᴅᴇʀ || ᴅᴇғᴀᴜʟᴛᴍᴇɴᴜ.ʜᴇᴀᴅᴇʀ
-    ʟᴇᴛ ʙᴏᴅʏ = ᴄᴏɴɴ.ᴍᴇɴᴜ.ʙᴏᴅʏ || ᴅᴇғᴀᴜʟᴛᴍᴇɴᴜ.ʙᴏᴅʏ
-    ʟᴇᴛ ғᴏᴏᴛᴇʀ = ᴄᴏɴɴ.ᴍᴇɴᴜ.ғᴏᴏᴛᴇʀ || ᴅᴇғᴀᴜʟᴛᴍᴇɴᴜ.ғᴏᴏᴛᴇʀ
-    ʟᴇᴛ ᴀғᴛᴇʀ = ᴄᴏɴɴ.ᴍᴇɴᴜ.ᴀғᴛᴇʀ || (ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ == ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ ? '' : `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴛᴛᴘs://ᴡᴀ.ᴍᴇ/${ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ.sᴘʟɪᴛ`@`[0]}`) + ᴅᴇғᴀᴜʟᴛᴍᴇɴᴜ.ᴀғᴛᴇʀ
-    ʟᴇᴛ _ᴛᴇxᴛ = [
-      ʙᴇғᴏʀᴇ,
-      ...ᴏʙᴊᴇᴄᴛ.ᴋᴇʏs(ᴛᴀɢs).ᴍᴀᴘ(ᴛᴀɢ => {
-        ʀᴇᴛᴜʀɴ ʜᴇᴀᴅᴇʀ.ʀᴇᴘʟᴀᴄᴇ(/%ᴄᴀᴛᴇɢᴏʀʏ/ɢ, ᴛᴀɢs[ᴛᴀɢ]) + '\ɴ' + [
-          ...ʜᴇʟᴘ.ғɪʟᴛᴇʀ(ᴍᴇɴᴜ => ᴍᴇɴᴜ.ᴛᴀɢs && ᴍᴇɴᴜ.ᴛᴀɢs.ɪɴᴄʟᴜᴅᴇs(ᴛᴀɢ) && ᴍᴇɴᴜ.ʜᴇʟᴘ).ᴍᴀᴘ(ᴍᴇɴᴜ => {
-            ʀᴇᴛᴜʀɴ ᴍᴇɴᴜ.ʜᴇʟᴘ.ᴍᴀᴘ(ʜᴇʟᴘ => {
-              ʀᴇᴛᴜʀɴ ʙᴏᴅʏ.ʀᴇᴘʟᴀᴄᴇ(/%ᴄᴍᴅ/ɢ, ᴍᴇɴᴜ.ᴘʀᴇғɪx ? ʜᴇʟᴘ : '%ᴘ' + ʜᴇʟᴘ)
-                .ʀᴇᴘʟᴀᴄᴇ(/%ɪsᴅɪᴀᴍᴏɴᴅ/ɢ, ᴍᴇɴᴜ.ᴅɪᴀᴍᴏɴᴅ ? '(ⓓ)' : '')
-                .ʀᴇᴘʟᴀᴄᴇ(/%ɪsᴘʀᴇᴍɪᴜᴍ/ɢ, ᴍᴇɴᴜ.ᴘʀᴇᴍɪᴜᴍ ? '(Ⓟ)' : '')
-                .ᴛʀɪᴍ()
-            }).ᴊᴏɪɴ('\ɴ')
+    for (let plugin of help)
+      if (plugin && 'tags' in plugin)
+        for (let tag of plugin.tags)
+          if (!(tag in tags) && tag) tags[tag] = tag
+    conn.menu = conn.menu ? conn.menu : {}
+    let before = conn.menu.before || defaultMenu.before
+    let header = conn.menu.header || defaultMenu.header
+    let body = conn.menu.body || defaultMenu.body
+    let footer = conn.menu.footer || defaultMenu.footer
+    let after = conn.menu.after || (conn.user.jid == conn.user.jid ? '' : `Powered by https://wa.me/${conn.user.jid.split`@`[0]}`) + defaultMenu.after
+    let _text = [
+      before,
+      ...Object.keys(tags).map(tag => {
+        return header.replace(/%category/g, tags[tag]) + '\n' + [
+          ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
+            return menu.help.map(help => {
+              return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
+                .replace(/%isdiamond/g, menu.diamond ? '(ⓓ)' : '')
+                .replace(/%isPremium/g, menu.premium ? '(Ⓟ)' : '')
+                .trim()
+            }).join('\n')
           }),
-          ғᴏᴏᴛᴇʀ
-        ].ᴊᴏɪɴ('\ɴ')
+          footer
+        ].join('\n')
       }),
-      ᴀғᴛᴇʀ
-    ].ᴊᴏɪɴ('\ɴ')
-    ʟᴇᴛ ᴛᴇxᴛ = ᴛʏᴘᴇᴏғ ᴄᴏɴɴ.ᴍᴇɴᴜ == 'sᴛʀɪɴɢ' ? ᴄᴏɴɴ.ᴍᴇɴᴜ : ᴛʏᴘᴇᴏғ ᴄᴏɴɴ.ᴍᴇɴᴜ == 'ᴏʙᴊᴇᴄᴛ' ? _ᴛᴇxᴛ : ''
-ʟᴇᴛ ʀᴇᴘʟᴀᴄᴇ = {
+      after
+    ].join('\n')
+    let text = typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
+let replace = {
 '%': '%',
-ᴘ: _ᴘ, ᴜᴘᴛɪᴍᴇ, ᴍᴜᴘᴛɪᴍᴇ,
-ᴍᴇ: ᴄᴏɴɴ.ɢᴇᴛɴᴀᴍᴇ(ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ),
-ᴛᴀɢᴜsᴇʀ: '@' + ᴍ.sᴇɴᴅᴇʀ.sᴘʟɪᴛ("@s.ᴡʜᴀᴛsᴀᴘᴘ.ɴᴇᴛ")[0],
-ɴᴘᴍɴᴀᴍᴇ: _ᴘᴀᴄᴋᴀɢᴇ.ɴᴀᴍᴇ,
-ɴᴘᴍᴅᴇsᴄ: _ᴘᴀᴄᴋᴀɢᴇ.ᴅᴇsᴄʀɪᴘᴛɪᴏɴ,
-ᴠᴇʀsɪᴏɴ: _ᴘᴀᴄᴋᴀɢᴇ.ᴠᴇʀsɪᴏɴ,
-ᴇxᴘ: ᴇxᴘ - ᴍɪɴ,
-ᴍᴀxᴇxᴘ: xᴘ,
-ʙᴏᴛᴏғᴄ: (ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ == ɢʟᴏʙᴀʟ.ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ ? '💛 𝙴𝚂𝚃𝙴 𝙴𝚂 𝙴𝙻 𝙱𝙾𝚃 𝙾𝙵𝙲' : `💛 𝚂𝚄𝙱-𝙱𝙾𝚃 𝙳𝙴: ᴡᴀ.ᴍᴇ/${ɢʟᴏʙᴀʟ.ᴄᴏɴɴ.ᴜsᴇʀ.ᴊɪᴅ.sᴘʟɪᴛ`@`[0]}`), 
-ᴛᴏᴛᴀʟᴇxᴘ: ᴇxᴘ,
-xᴘ4ʟᴇᴠᴇʟᴜᴘ: ᴍᴀx - ᴇxᴘ,
-ɢɪᴛʜᴜʙ: _ᴘᴀᴄᴋᴀɢᴇ.ʜᴏᴍᴇᴘᴀɢᴇ ? _ᴘᴀᴄᴋᴀɢᴇ.ʜᴏᴍᴇᴘᴀɢᴇ.ᴜʀʟ || _ᴘᴀᴄᴋᴀɢᴇ.ʜᴏᴍᴇᴘᴀɢᴇ : '[ᴜɴᴋɴᴏᴡɴ ɢɪᴛʜᴜʙ ᴜʀʟ]',
-ɢʀᴇᴇᴛɪɴɢ, ʟᴇᴠᴇʟ, ᴇsᴛʀᴇʟʟᴀs, ɴᴀᴍᴇ, ᴡᴇᴛᴏɴ, ᴡᴇᴇᴋ, ᴅᴀᴛᴇ, ᴅᴀᴛᴇɪsʟᴀᴍɪᴄ, ᴛɪᴍᴇ, ᴛᴏᴛᴀʟʀᴇɢ, ʀᴛᴏᴛᴀʟʀᴇɢ, ʀᴏʟᴇ,
-ʀᴇᴀᴅᴍᴏʀᴇ: ʀᴇᴀᴅᴍᴏʀᴇ
+p: _p, uptime, muptime,
+me: conn.getName(conn.user.jid),
+taguser: '@' + m.sender.split("@s.whatsapp.net")[0],
+npmname: _package.name,
+npmdesc: _package.description,
+version: _package.version,
+exp: exp - min,
+maxexp: xp,
+botofc: (conn.user.jid == global.conn.user.jid ? '💛 𝙴𝚂𝚃𝙴 𝙴𝚂 𝙴𝙻 𝙱𝙾𝚃 𝙾𝙵𝙲' : `💛 𝚂𝚄𝙱-𝙱𝙾𝚃 𝙳𝙴: Wa.me/${global.conn.user.jid.split`@`[0]}`), 
+totalexp: exp,
+xp4levelup: max - exp,
+github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
+greeting, level, estrellas, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
+readmore: readMore
 }
-ᴛᴇxᴛ = ᴛᴇxᴛ.ʀᴇᴘʟᴀᴄᴇ(ɴᴇᴡ ʀᴇɢᴇxᴘ(`%(${ᴏʙᴊᴇᴄᴛ.ᴋᴇʏs(ʀᴇᴘʟᴀᴄᴇ).sᴏʀᴛ((ᴀ, ʙ) => ʙ.ʟᴇɴɢᴛʜ - ᴀ.ʟᴇɴɢᴛʜ).ᴊᴏɪɴ`|`})`, 'ɢ'), (_, ɴᴀᴍᴇ) => '' + ʀᴇᴘʟᴀᴄᴇ[ɴᴀᴍᴇ])
+text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
-ᴀᴡᴀɪᴛ ᴍ.ʀᴇᴀᴄᴛ(ᴇᴍᴏᴊɪs) 
+await m.react(emojis) 
 
-/* ᴄᴏɴɴ.sᴇɴᴅᴍᴇssᴀɢᴇ(ᴍ.ᴄʜᴀᴛ, {ᴛᴇxᴛ: ᴛᴇxᴛ.ᴛʀɪᴍ(), ᴍᴇɴᴛɪᴏɴs: [...ᴛᴇxᴛ.ᴍᴀᴛᴄʜᴀʟʟ(/@([0-9]{5,16}|0)/ɢ)].ᴍᴀᴘ((ᴠ) => ᴠ[1] + '@s.ᴡʜᴀᴛsᴀᴘᴘ.ɴᴇᴛ'), ᴄᴏɴᴛᴇxᴛɪɴғᴏ: { ᴍᴇɴᴛɪᴏɴᴇᴅᴊɪᴅ: [...ᴛᴇxᴛ.ᴍᴀᴛᴄʜᴀʟʟ(/@([0-9]{5,16}|0)/ɢ)].ᴍᴀᴘ((ᴠ) => ᴠ[1] + '@s.ᴡʜᴀᴛsᴀᴘᴘ.ɴᴇᴛ'), "ᴇxᴛᴇʀɴᴀʟᴀᴅʀᴇᴘʟʏ": {"sʜᴏᴡᴀᴅᴀᴛᴛʀɪʙᴜᴛɪᴏɴ": ᴛʀᴜᴇ, "ʀᴇɴᴅᴇʀʟᴀʀɢᴇʀᴛʜᴜᴍʙɴᴀɪʟ": ᴛʀᴜᴇ, "ᴄᴏɴᴛᴀɪɴsᴀᴜᴛᴏʀᴇᴘʟʏ": ᴛʀᴜᴇ, "ᴍᴇᴅɪᴀᴛʏᴘᴇ": 1, "ᴛʜᴜᴍʙɴᴀɪʟᴜʀʟ": 'ʜᴛᴛᴘs://ɪ.ɪʙʙ.ᴄᴏ/5xᴍs19ɴx/ғɪʟᴇ.ᴊᴘɢ' }}}, {ǫᴜᴏᴛᴇᴅ: ᴍ})
+/* conn.sendMessage(m.chat, {text: text.trim(), mentions: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: { mentionedJid: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "renderLargerThumbnail": true, "containsAutoReply": true, "mediaType": 1, "thumbnailUrl": 'https://i.ibb.co/5xMs19nx/file.jpg' }}}, {quoted: m})
 
 
-ᴄᴏɴɴ.sᴇɴᴅᴍᴇssᴀɢᴇ(ᴍ.ᴄʜᴀᴛ, { ɪᴍᴀɢᴇ: { ᴜʀʟ: 'ʜᴛᴛᴘs://ɪ.ɪʙʙ.ᴄᴏ/5xᴍs19ɴx/ғɪʟᴇ.ᴊᴘɢ' }, ᴄᴀᴘᴛɪᴏɴ: ᴛᴇxᴛ.ᴛʀɪᴍ() }, { ǫᴜᴏᴛᴇᴅ: ᴍ });
+conn.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/5xMs19nx/file.jpg' }, caption: text.trim() }, { quoted: m });
 
-  } ᴄᴀᴛᴄʜ (ᴇ) {
-    ᴄᴏɴɴ.ʀᴇᴘʟʏ(ᴍ.ᴄʜᴀᴛ, `❌️ ʟᴏ sᴇɴᴛɪᴍᴏs, ᴇʟ ᴍᴇɴᴜ́ ᴛɪᴇɴᴇ ᴜɴ ᴇʀʀᴏʀ ${ᴇ.ᴍᴇssᴀɢᴇ}`, ᴍ, ʀᴄᴀɴᴀʟ, )
-    ᴛʜʀᴏᴡ ᴇ
+  } catch (e) {
+    conn.reply(m.chat, `❌️ Lo sentimos, el menú tiene un error ${e.message}`, m, rcanal, )
+    throw e
   }
 }
-ʜᴀɴᴅʟᴇʀ.ʜᴇʟᴘ = ['ᴍᴇɴᴜ']
-ʜᴀɴᴅʟᴇʀ.ᴛᴀɢs = ['ᴍᴀɪɴ']
-ʜᴀɴᴅʟᴇʀ.ᴄᴏᴍᴍᴀɴᴅ = ['ᴍᴇɴᴜ', 'ʜᴇʟᴘ', 'ᴍᴇɴᴜᴀʟʟ', 'ᴀʟʟᴍᴇɴᴜ́', 'ᴀʟʟᴍᴇɴᴜ', 'ᴍᴇɴᴜᴄᴏᴍᴘʟᴇᴛᴏ'] 
-ʜᴀɴᴅʟᴇʀ.ʀᴇɢɪsᴛᴇʀ = ғᴀʟsᴇ
+handler.help = ['menu']
+handler.tags = ['main']
+handler.command = ['menu', 'help', 'menuall', 'allmenú', 'allmenu', 'menucompleto'] 
+handler.register = false
 
-ᴇxᴘᴏʀᴛ ᴅᴇғᴀᴜʟᴛ ʜᴀɴᴅʟᴇʀ
+export default handler
 
-ᴄᴏɴsᴛ ᴍᴏʀᴇ = sᴛʀɪɴɢ.ғʀᴏᴍᴄʜᴀʀᴄᴏᴅᴇ(8206)
-ᴄᴏɴsᴛ ʀᴇᴀᴅᴍᴏʀᴇ = ᴍᴏʀᴇ.ʀᴇᴘᴇᴀᴛ(4001)
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
 
-ғᴜɴᴄᴛɪᴏɴ ᴄʟᴏᴄᴋsᴛʀɪɴɢ(ᴍs) {
-  ʟᴇᴛ ʜ = ɪsɴᴀɴ(ᴍs) ? '--' : ᴍᴀᴛʜ.ғʟᴏᴏʀ(ᴍs / 3600000)
-  ʟᴇᴛ ᴍ = ɪsɴᴀɴ(ᴍs) ? '--' : ᴍᴀᴛʜ.ғʟᴏᴏʀ(ᴍs / 60000) % 60
-  ʟᴇᴛ s = ɪsɴᴀɴ(ᴍs) ? '--' : ᴍᴀᴛʜ.ғʟᴏᴏʀ(ᴍs / 1000) % 60
-  ʀᴇᴛᴜʀɴ [ʜ, ᴍ, s].ᴍᴀᴘ(ᴠ => ᴠ.ᴛᴏsᴛʀɪɴɢ().ᴘᴀᴅsᴛᴀʀᴛ(2, 0)).ᴊᴏɪɴ(':')
+function clockString(ms) {
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 
-  ᴠᴀʀ ᴀsᴇ = ɴᴇᴡ ᴅᴀᴛᴇ();
-  ᴠᴀʀ ʜᴏᴜʀ = ᴀsᴇ.ɢᴇᴛʜᴏᴜʀs();
-sᴡɪᴛᴄʜ(ʜᴏᴜʀ){
-  ᴄᴀsᴇ 0: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 🌙'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 1: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 💤'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 2: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 🦉'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 3: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs ✨'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 4: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs 💫'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 5: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs 🌅'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 6: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs 🌄'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 7: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs 🌅'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 8: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs 💫'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 9: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs ✨'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 10: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs 🌞'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 11: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs 🌨'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 12: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs ❄'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 13: ʜᴏᴜʀ = 'ʙᴜᴇɴᴏs ᴅɪᴀs 🌤'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 14: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ᴛᴀʀᴅᴇs 🌇'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 15: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ᴛᴀʀᴅᴇs 🥀'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 16: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ᴛᴀʀᴅᴇs 🌹'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 17: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ᴛᴀʀᴅᴇs 🌆'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 18: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 🌙'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 19: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 🌃'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 20: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 🌌'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 21: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 🌃'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 22: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 🌙'; ʙʀᴇᴀᴋ;
-  ᴄᴀsᴇ 23: ʜᴏᴜʀ = 'ʙᴜᴇɴᴀs ɴᴏᴄʜᴇs 🌃'; ʙʀᴇᴀᴋ;
+  var ase = new Date();
+  var hour = ase.getHours();
+switch(hour){
+  case 0: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
+  case 1: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 💤'; break;
+  case 2: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🦉'; break;
+  case 3: hour = 'Bᴜᴇɴᴏs Dɪᴀs ✨'; break;
+  case 4: hour = 'Bᴜᴇɴᴏs Dɪᴀs 💫'; break;
+  case 5: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌅'; break;
+  case 6: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌄'; break;
+  case 7: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌅'; break;
+  case 8: hour = 'Bᴜᴇɴᴏs Dɪᴀs 💫'; break;
+  case 9: hour = 'Bᴜᴇɴᴏs Dɪᴀs ✨'; break;
+  case 10: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌞'; break;
+  case 11: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌨'; break;
+  case 12: hour = 'Bᴜᴇɴᴏs Dɪᴀs ❄'; break;
+  case 13: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌤'; break;
+  case 14: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌇'; break;
+  case 15: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🥀'; break;
+  case 16: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌹'; break;
+  case 17: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌆'; break;
+  case 18: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
+  case 19: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
+  case 20: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌌'; break;
+  case 21: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
+  case 22: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
+  case 23: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
 }
-  ᴠᴀʀ ɢʀᴇᴇᴛɪɴɢ = ʜᴏᴜʀ;
+  var greeting = hour;
 */
