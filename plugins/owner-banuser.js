@@ -38,7 +38,7 @@ return
 users = global.db.data.users 
 users[user].banned = true
 usr = m.sender.split('@')[0]     
-await conn.reply(m.chat, '✅ *ᴇʟ ᴜsᴜᴀʀɪᴏ ғᴜᴇ́ ʙᴀɴᴇᴀᴅᴏ ᴄᴏɴ ᴇ́xɪᴛᴏ.*', m, { mentions: [user] })   
+    conn.reply(m.chat, `✦ *El usuario @${who.split('@')[0]} Fue baneado*`, fkontak, { mentions: [who] });   
 }} catch (e) {
 await conn.reply(m.chat, `🚩 *Ocurrió un fallo* ${e.message}`, m, )
 console.log(e) 
