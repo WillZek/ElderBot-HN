@@ -7,6 +7,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let name = await conn.getName(who);
     let edtr = `@${m.sender.split`@`[0]}`;
     let username = conn.getName(m.sender);
+    let tag = `@${m.sender.split('@')[0]}`;
 
     // VCARD
     let list = [{
@@ -34,10 +35,13 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         quoted: m
     });
 
-    let txt = `👋 *Hola \`${username}\` este es*\n*el contacto de mi creador*`;
+    let txt = `👋 *Hola ${tag} este es*\n*el contacto de mi creador*`;
 
-    await conn.sendMessage(m.chat, { text: txt });
-};
+    conn.sendMessage(m.chat, { 
+        text: txt, 
+        mentions: [m.sender]
+    }, { quoted: m });
+    }
 
 handler.help = ['owner', 'creator'];
 handler.tags = ['main'];
