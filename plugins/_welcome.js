@@ -25,7 +25,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
         .resize({ width: 1200, height: 1200, fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
         .toBuffer();
 
-      await conn.sendMessage(m.chat, { image: extendedImage, caption: welcome });
+      await conn.sendMessage(m.chat, { image: img, caption: welcome });
     } catch (error) {
       console.error('Error al procesar la imagen:', error);
       await conn.sendMessage(m.chat, { image: img, caption: welcome });
