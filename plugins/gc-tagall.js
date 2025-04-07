@@ -4,7 +4,7 @@ import PhoneNumber from 'awesome-phonenumber';
 const handler = async (m, { participants, args }) => {
   const pesan = args.join` `;
   const oi = `*» INFO :* ${pesan}`;
-  let mensajes = `*╭━* 𝘼𝘾𝙏𝙄𝙑𝙀𝙉𝙎𝙀𝙉 乂\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n╭  ┄ 𝅄  ۪꒰ 𝗘𝗟𝗗𝗘𝗥-𝗕𝗢𝗧 ꒱  ۟  𝅄 ┄\n`;
+  let mensajes = `*╭━* 𝘼𝘾𝙏𝙄𝙑𝙀𝙉𝙎𝙀𝙉 乂\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n*╭━*⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊\n`;
 
   for (const mem of participants) {
     let numero = PhoneNumber('+' + mem.id.replace('@s.whatsapp.net', '')).getNumber('international');
