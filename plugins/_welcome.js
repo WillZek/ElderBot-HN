@@ -9,7 +9,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60');
   let img = await (await fetch(pp)).buffer();
-
+let who = m.messageStubParameters[0];
   let chat = global.db.data.chats[m.chat];
   console.log('Configuración del chat:', chat);
 
@@ -25,7 +25,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
         .resize({ width: 1200, height: 1200, fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
         .toBuffer();
 
-      await conn.sendMessage(m.chat, { image: img, caption: welcome });
+      await conn.sendMessage(m.chat, { image: img, caption: welcome, mentions: [who] }, { quoted: m })
     } catch (error) {
       console.error('Error al procesar la imagen:', error);
       await conn.sendMessage(m.chat, { image: img, caption: welcome });
