@@ -1,42 +1,28 @@
-import { WAMessageStubType } from '@whiskeysockets/baileys'
-import fetch from 'node-fetch'
+import { WAMessageStubType } from '@whiskeysockets/baileys';
+import fetch from 'node-fetch';
+import sharp from 'sharp';
 
 export async function before(m, { conn, participants, groupMetadata }) {
-  if (!m.messageStubType || !m.isGroup) return true
+  if (!m.messageStubType || !m.isGroup) return !0;
+  let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60');
+  let img = await (await fetch(pp)).buffer();
 
-  let who = m.messageStubParameters[0]
-  let taguser = `@${who.split('@')[0]}`
-  let chat = global.db.data.chats[m.chat]
-  let defaultImage = 'https://files.catbox.moe/i7uo2l.jpg';
+  let chat = global.db.data.chats[m.chat];
 
-  if (chat.welcome) {
-    let img;
+  if (chat.welcome && m.messageStubType == 27) {
+    let welcome = global.welcome
+      .replace('+tag', `@${m.messageStubParameters[0].split('@')[0]}`)
+      .replace('+description', groupMetadata.desc || 'Sin descripción');
+
     try {
-      let pp = await conn.profilePictureUrl(who, 'image');
-      img = await (await fetch(pp)).buffer();
-    } catch {
-      img = await (await fetch(defaultImage)).buffer();
-    }
+      const extendedImage = await sharp(img)
+        .resize({ width: 1800, height: 700, fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+        .toBuffer();
 
-let desc = `${groupMetadata.desc?.toString() || '*ElderBot-HN*'}`
-
-  const welcomeMessage = global.db.data.chats[m.chat]?.welcomeMessage || 'Bienvenido/a :';
-
-let chat = global.db.data.chats[m.chat];
-
-// if (!chat.isBanned) return m.reply('🍭 El Bot Está Baneado En Este Chat');
-
-    if (!chat.isBanned && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
-    let bienvenida = `│┊➺ *𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 (𝙖)*\n│┊➺ *@${m.messageStubParameters[0].split`@`[0]}*\n│┊➺ *${groupMetadata.subject}*\n\n*⊰ 𝙇𝙚𝙚 𝙡𝙖 𝙙𝙚𝙨𝙘𝙧𝙞𝙥𝙘𝙞𝙤𝙣 👇*\n\n${desc}\n\n> © ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr`
-      await conn.sendMessage(m.chat, { image: img, caption: bienvenida, mentions: [who] }, { quoted: estilo })
-    } else if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE || m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
-
-const despMessage = global.db.data.chats[m.chat]?.despMessage || 'Se Fue😹';
-
-     let bye = `\n*│┊➺* *𝙎𝙚 𝙛𝙪𝙚́ 𝙅𝙖𝙢𝙖́𝙨 𝙩𝙚́ 𝙦𝙪𝙞𝙨𝙞𝙢𝙤𝙨 𝙖𝙦𝙪𝙞́*\n\n*│┊➺* @${m.messageStubParameters[0].split`@`[0]}\n\n*│┊➺* *𝙐𝙣𝙖 𝙢𝙧𝙙 𝙢𝙚𝙣𝙤𝙨 😈*\n┗━━━━━━━━━━━━━━━━┛`
-      await conn.sendMessage(m.chat, { image: img, caption: bye, mentions: [who] }, { quoted: estilo })
+      await conn.sendMini(m.chat, redes, dev, welcome, extendedImage, extendedImage, redeshost);
+    } catch (error) {
+      console.error('Error', error);
+      await conn.sendMini(m.chat, redes, dev, welcome, img, img, redeshost);
     }
   }
-
-  return true
 }
