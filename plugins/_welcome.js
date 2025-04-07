@@ -15,7 +15,7 @@ let who = m.messageStubParameters[0];
 
   if (chat.welcome && m.messageStubType == 27) {
     let welcome = global.welcome
-      .replace('+tag', `@${m.messageStubParameters[0].split('@')[0]}`)
+      .replace('+tag', `@${m.messageStubParameters[0].split`@`[0]}`)
       .replace('+description', groupMetadata.desc || 'Sin descripción');
 
     console.log('Mensaje de bienvenida:', welcome);
