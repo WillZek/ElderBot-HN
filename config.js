@@ -12,6 +12,7 @@ import moment from 'moment-timezone'
 global.owner = [
    ['50493374445', 'Creador Elder🥷', true],
    ['50557865603', 'WillZek Soporte', true],
+   ['50489513153', 'Posadas Soporte', true],
 ]
 
 global.creadorbot = [
