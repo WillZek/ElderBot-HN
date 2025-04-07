@@ -16,8 +16,7 @@ const handler = async (m, { participants, args }) => {
     mensajes += `${paisdata} @${mem.id.split('@')[0]}\n`;
   }
 
-    mensajes += `*╰━* 𝙃𝙉 𝙀𝙇𝘿𝙀𝙍-𝘽𝙊𝙏
-▌│█║▌║▌║║▌║▌║▌║█`;
+    mensajes += `*╰━* 𝙃𝙉 𝙀𝙇𝘿𝙀𝙍-𝘽𝙊𝙏`;
 
   conn.sendMessage(m.chat, { text: mensajes, mentions: participants.map((a) => a.id) });
 };
