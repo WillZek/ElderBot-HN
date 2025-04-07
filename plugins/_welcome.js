@@ -10,24 +10,19 @@ export async function before(m, { conn, participants, groupMetadata }) {
   let chat = global.db.data.chats[m.chat];
 
   if (chat.welcome && m.messageStubType == 27) {
-    let welcome = `
-      🌟 Bienvenido/a al grupo ${groupMetadata.subject}! 🌟
-      
-      👤 Usuario: @${m.messageStubParameters[0].split('@')[0]}
-      📜 Descripción: ${groupMetadata.desc || 'Sin descripción'}
-      
-      ¡Esperamos que disfrutes tu estadía! 😊
-    `;
+    let welcome = global.welcome
+      .replace('+tag', `@${m.messageStubParameters[0].split('@')[0]}`)
+      .replace('+description', groupMetadata.desc || 'Sin descripción');
 
     try {
       const extendedImage = await sharp(img)
         .resize({ width: 1800, height: 700, fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
         .toBuffer();
 
-      await conn.sendMessage(m.chat, { image: extendedImage, caption: welcome });
+      await conn.sendMini(m.chat, redes, dev, welcome, extendedImage, extendedImage, redeshost);
     } catch (error) {
-      console.error('Error al procesar la imagen:', error);
-      await conn.sendMessage(m.chat, { image: img, caption: welcome });
+      console.error('Error', error);
+      await conn.sendMini(m.chat, redes, dev, welcome, img, img, redeshost);
     }
   }
 }
