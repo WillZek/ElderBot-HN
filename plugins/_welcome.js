@@ -1,30 +1,44 @@
-import { WAMessageStubType } from '@whiskeysockets/baileys';
-import fetch from 'node-fetch';
+import { WAMessageStubType } from '@whiskeysockets/baileys'
+import fetch from 'node-fetch'
 
 export async function before(m, { conn, participants, groupMetadata }) {
-  if (!m.messageStubType || !m.isGroup) return !0;
+  if (!m.messageStubType || !m.isGroup) return true
 
-  // Define la URL de la imagen por defecto
-  const defaultImage = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60';
-  
-  // Obtén la URL de la imagen de perfil
-  let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => defaultImage);
-  
-  // Descarga la imagen de perfil
-  let image = await (await fetch(pp)).buffer();
+  let who = m.messageStubParameters[0]
+  let taguser = `@${who.split('@')[0]}`
+  let chat = global.db.data.chats[m.chat]
+  let defaultImage = 'https://files.catbox.moe/i7uo2l.jpg';
 
-  let chat = global.db.data.chats[m.chat];
-
-  // Verifica si el mensaje de bienvenida está habilitado y si el tipo de mensaje es de agregar participante
-  if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
-    let user = `@${m.messageStubParameters[0].split`@`[0]}`;
-    let description = groupMetadata.desc ? `\n${groupMetadata.desc}` : '';
-    let welcome = `*Usuario ✦ ${user}*\n${description}`;
-
+  if (chat.welcome) {
+    let img;
     try {
-      await conn.sendMessage(m.chat, { text: welcome, mentions: [m.messageStubParameters[0]] }, { quoted: m });
-    } catch (error) {
-      console.error('Error al enviar mensaje de bienvenida:', error);
+      let pp = await conn.profilePictureUrl(who, 'image');
+      img = await (await fetch(pp)).buffer();
+    } catch {
+      img = await (await fetch(defaultImage)).buffer();
+    }
+
+let desc = `${groupMetadata.desc?.toString() || '*ElderBot-HN*'}`
+
+  const welcomeMessage = global.db.data.chats[m.chat]?.welcomeMessage || 'Bienvenido/a :';
+
+let chat = global.db.data.chats[m.chat];
+
+// if (!chat.isBanned) return m.reply('🍭 El Bot Está Baneado En Este Chat');
+
+    if (!chat.isBanned && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
+    let bienvenida = `┇➩ *ʙɪᴇɴᴠᴇɴɪᴅᴏ (ᴀ)*\n┇➩ *@${m.messageStubParameters[0].split`@`[0]}*\n┇➩ *${groupMetadata.subject}*\n\n*⊰ ʟᴇᴇ ʟᴀ ᴅᴇsᴄʀɪᴘᴄɪᴏ́ɴ ⊱*\n\n${desc}\n\n> © ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr`
+      await conn.sendMessage(m.chat, { image: img, caption: bienvenida, mentions: [who] }, { quoted: estilo })
+
+let chatt = global.db.data.chats[m.chat];
+    } else if (!chatt.isBanned && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE || m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE && !chatt.isBanned) {
+
+const despMessage = global.db.data.chats[m.chat]?.despMessage || 'Se Fue😹';
+
+     let bye = `┌─★ 𝐇𝐍 𝐄𝐥𝐝𝐞𝐫𝐁𝐨𝐭\n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🥷 ${despMessage}\n   │🥷 Jamás te quisimos aquí\n   └───────────────┈ ⳹`
+      await conn.sendMessage(m.chat, { image: img, caption: bye, mentions: [who] }, { quoted: estilo })
     }
   }
+
+  return true
 }
