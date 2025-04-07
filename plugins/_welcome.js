@@ -15,7 +15,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   if (chat.welcome && m.messageStubType == 27) {
     let welcome = global.welcome
-      .replace('+tag', @${m.messageStubParameters[0].split`@`[0]}
+      .replace('+tag', ${tag}
       .replace('+description', groupMetadata.desc || 'Sin descripción');
 
     console.log('Mensaje de bienvenida:', welcome);
