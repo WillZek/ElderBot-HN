@@ -1,10 +1,9 @@
 let handler = async (m, { conn }) => {
-    let tag = `@${m.sender.split('@')[0]}`;
-    let name = await conn.getName(m.sender); // Obtener el nombre del usuario
-    let txt = `╔═══════════════╗
-┇➤ 𝙃𝙊𝙇𝘼, 𝙃𝙐𝙈𝘼𝙉𝙊
-┇ *${tag}* (${name})
-╚════════════
+let tag = `@${m.sender.split('@')[0]}`;
+ let txt = `*╔═══════════════╗*
+*╠➤* 𝙃𝙊𝙇𝘼, 𝙃𝙐𝙈𝘼𝙉𝙊 👋
+*╠➤* *${tag}* 
+*╚═══════════════╝*
 *╔════════════════╗*
 *║* 𝗠𝗘𝗡𝗨 𝗘𝗟𝗗𝗘𝗥-𝗕𝗢𝗧 👨🏻‍💻  *║*
 *╚════════════════╝*
@@ -183,7 +182,7 @@ let handler = async (m, { conn }) => {
 
 > *© ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr*`.trim();
 
-   m.react('✅');
+   m.react('🔰');
 let perfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/5xMs19nx/file.jpg');
 
 /* await conn.sendMessage(m.chat, { text: txt, contextInfo: { externalAdReply: { title: botname, body: dev, thumbnailUrl: banner, mediaType: 1, showAdAttribution: true, renderLargerThumbnail: true }}} , { quoted: m })
