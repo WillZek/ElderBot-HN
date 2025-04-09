@@ -2,14 +2,16 @@
  
 let handler = async(m, { conn }) => {
 
-let vs = `*🩵 4 VS 4 - FREE FIRE*\n\n`
-    vs += `🛡️ PARTICIPANTES:\n`
+let vs = `*𝗩𝗔𝗠𝗢𝗦 𝗔 𝗖𝗢𝗠𝗣𝗘*\n\n`
+
+    vs += `🛡️ 𝐄𝐒𝐂𝐔𝐀𝐃𝐑𝐀:\n`
     vs += `👑 ┇\n🥷🏻 ┇\n🥷🏻 ┇\n🥷🏻 ┇\n`
-    vs += `💫 *SUPLENTES*:\n`
+    vs += `💫 𝐒𝐔𝐏𝐋𝐄𝐍𝐓𝐄𝐒:\n`
     vs += `🥷🏻 ┇\n🥷🏻 ┇\n`
+
     vs += `🍨 ${dev}`
 
-let vsimg = 'https://files.catbox.moe/ev7gjp.jpg';
+let vsimg = 'atbox.moe/ev7gjp.jpg';
 
 conn.sendMessage(m.chat, { image: { url: vsimg }, caption: vs }, { quoted: m });
 }
