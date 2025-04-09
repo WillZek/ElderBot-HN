@@ -2,11 +2,11 @@
  
 let handler = async(m, { conn }) => {
 
-let vs = `🩵 4 VS 4 - FREE FIRE\n\n`
+let vs = `*🩵 4 VS 4 - FREE FIRE*\n\n`
     vs += `🛡️ PARTICIPANTES:\n`
-    vs += `•\n•\n•\n•\n•\n•\n•\n•\n`
-    vs += `💫 REGLAS:\n`
-    vs += `•\n•\n•\n`
+    vs += `👑 ┇\n🥷🏻 ┇\n🥷🏻 ┇\n🥷🏻 ┇\n`
+    vs += `💫 *SUPLENTES*:\n`
+    vs += `🥷🏻 ┇\n🥷🏻 ┇\n`
     vs += `🍨 ${dev}`
 
 let vsimg = 'https://files.catbox.moe/ev7gjp.jpg';
