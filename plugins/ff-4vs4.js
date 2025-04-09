@@ -10,9 +10,6 @@ let vs = `*𝗩𝗔𝗠𝗢𝗦 𝗔 𝗖𝗢𝗠𝗣𝗘*\n\n`
     vs += `🍨 ${dev}`
 
 
-conn.sendMessage(m.chat, { image: { url: vsimg }, caption: vs }, { quoted: m });
-}
-
 handler.command = ['4vs4'];
 
 export default handler
